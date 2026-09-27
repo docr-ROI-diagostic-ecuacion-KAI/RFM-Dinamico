@@ -228,6 +228,36 @@
       .site-header,.hero,.outcome,.side-nav,.panel-head,.section-nav,.inline-actions,.tool-intro,.diiip-section,.kai-section,.docroi-footer,.no-print{display:none!important}
       body,.tool-shell{background:#fff}.tool-shell{padding:0}.wrap{width:100%;max-width:none}.workspace{display:block}.work-panel{border:0;box-shadow:none}.step-pane{display:none!important}.step-pane[data-step="out3"]{display:block!important}.panel-body{padding:0}.summary-item{break-inside:avoid}
     }
+
+
+    /* Cross-pill data contract */
+    .architecture-strip{margin-top:22px;border:1px solid rgba(216,236,248,.28);border-radius:8px;padding:18px;background:#101722}
+    .architecture-strip h3{color:#fff;margin:0 0 12px;font-size:16px}
+    .architecture-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+    .arch-step{border:1px solid rgba(255,255,255,.16);border-radius:8px;padding:13px;background:rgba(255,255,255,.04)}
+    .arch-step span{display:block;color:#9fb2c3;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+    .arch-step strong{display:block;color:#fff;font-size:14px;line-height:1.35}
+    .arch-step.active{background:#fff;border-color:#fff}.arch-step.active span{color:var(--docroi-blue)}.arch-step.active strong{color:var(--docroi-ink)}
+    .equation-line{margin-top:12px;color:#dce5ec;font-size:13px;font-weight:700;line-height:1.5}
+    .contract-note{border:1px solid var(--docroi-line);border-left:4px solid var(--docroi-blue);border-radius:0 8px 8px 0;padding:16px 18px;background:#fff;margin:18px 0}
+    .contract-note strong{display:block;margin-bottom:4px}.contract-note p{margin:0;color:var(--docroi-muted)}
+    .mapping-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .mapping-group{border-top:1px solid var(--docroi-line);padding-top:16px;margin-top:16px}
+    .mapping-group h5{margin:0 0 10px;font-size:14px;color:var(--docroi-ink)}
+    .stats-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}
+    .stat-box{border:1px solid var(--docroi-line);border-radius:8px;padding:16px;background:#fff}
+    .stat-box span{display:block;color:var(--docroi-muted);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+    .stat-box strong{display:block;font-size:26px;line-height:1.15;margin-top:5px}
+    .validation-panel{border:1px solid var(--docroi-line);border-radius:8px;padding:18px;background:#f8fafc;margin:18px 0}
+    .validation-panel.passed{border-color:#9bc9b4;background:#f2fbf6}.validation-panel.failed{border-color:#dfb1b1;background:#fff6f6}
+    .validation-title{font-weight:900;letter-spacing:.04em}.validation-list{margin:10px 0 0;padding-left:20px;color:var(--docroi-muted)}
+    .micro{font-size:12px;color:var(--docroi-muted);line-height:1.5}
+    .contract-columns{font-size:12px;line-height:1.55;background:#f7f9fb;border:1px solid var(--docroi-line);border-radius:8px;padding:14px;overflow:auto}
+    .demo-flag{display:inline-flex;align-items:center;gap:7px;background:#eaf6fb;color:var(--docroi-blue);border:1px solid var(--docroi-ice);border-radius:999px;padding:7px 11px;font-size:12px;font-weight:900}
+    .preview-note{margin-top:10px;color:var(--docroi-muted);font-size:12px}
+    @media(max-width:800px){.architecture-grid{grid-template-columns:1fr 1fr}.mapping-grid,.stats-grid{grid-template-columns:1fr}}
+    @media(max-width:520px){.architecture-grid{grid-template-columns:1fr}}
+
   </style>
 </head>
 <body>
@@ -248,22 +278,32 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <span class="eyebrow">MEDICINES · DATA MONETISATION SERIES · 01 DYNAMIC RFM</span>
-          <h1>Dynamic RFM for customer behaviour segmentation</h1>
-          <p>A learning pill and a practical laboratory to understand, configure and calculate RFM: who buys, when they buy, how much value they contribute, how they move between segments and which commercial treatment should be activated.</p>
+          <span class="eyebrow">MEDICINES · LOYALTY ARCHITECTURE · 01 DYNAMIC RFM</span>
+          <h1>Dynamic RFM · behavioural intelligence for the DOC ROI loyalty architecture</h1>
+          <p>Learn Dynamic RFM, analyse customer movement and generate a standardised customer-level dataset that can be merged later with DOC ROI NPS and ABCD Product Intelligence inside the Loyalty Strategy Planner / SPO Builder.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#academy" data-goto="a1">Start with the Academy</a>
-            <a class="btn btn-ghost-dark" href="#laboratory" data-goto="l1">Go to the Laboratory</a>
+            <a class="btn btn-ghost-dark" href="#laboratory" data-goto="l2">Load Don Espadín · 266 customers</a>
+          </div>
+          <div class="architecture-strip" aria-label="DOC ROI cross-pill loyalty architecture">
+            <h3>DOC ROI CROSS-PILL DATA CONTRACT</h3>
+            <div class="architecture-grid">
+              <div class="arch-step active"><span>01 · This tool</span><strong>Dynamic RFM</strong></div>
+              <div class="arch-step"><span>02</span><strong>NPS</strong></div>
+              <div class="arch-step"><span>03</span><strong>ABCD Product Intelligence</strong></div>
+              <div class="arch-step"><span>04 · Merge by customer_key</span><strong>Loyalty Strategy Planner / SPO Builder</strong></div>
+            </div>
+            <div class="equation-line">RFM Behaviour Intelligence + NPS Relationship Intelligence + ABCD Product Intelligence = SPO inside the Loyalty Strategy Planner.</div>
           </div>
         </div>
-        <aside class="hero-proof" aria-label="Minimum data and outputs">
-          <span class="proof-label">What you will obtain</span>
-          <strong>An actionable portfolio diagnosis</strong>
+        <aside class="hero-proof" aria-label="Interoperability output">
+          <span class="proof-label">Interoperability product</span>
+          <strong>One SPO-ready row per customer</strong>
           <ul>
-            <li>Minimum input: customer, order, date and order revenue.</li>
-            <li>Configurable RFM model with periods, weights and factor ranges.</li>
-            <li>Portfolio dashboard and 5×5 migration matrix.</li>
-            <li>Operational CSV plus an executive summary ready to print.</li>
+            <li>Don Espadín classroom example: exactly 266 fictional customers.</li>
+            <li>Production rule: N unique customers in = N SPO-ready rows out.</li>
+            <li>Stable integration key: <code>customer_key</code>.</li>
+            <li>No final SPO and no fixed Top 10/15/20% segmentation in this tool.</li>
           </ul>
         </aside>
       </div>
@@ -272,15 +312,15 @@
     <section class="outcome" aria-labelledby="outcome-title">
       <div class="wrap outcome-grid">
         <div>
-          <span class="kicker">From transactions to decisions</span>
-          <h2 id="outcome-title">Read the portfolio as movement, not as a static list.</h2>
-          <p>Dynamic RFM compares two equivalent periods. The result is not only a score: it is evidence of whether each customer relationship is improving, remaining stable or deteriorating.</p>
+          <span class="kicker">Don Espadín classroom case + production data contract</span>
+          <h2 id="outcome-title">Analyse behaviour now. Preserve interoperability for the loyalty strategy later.</h2>
+          <p>The Don Espadín example is a fixed synthetic portfolio of 266 customers. Real datasets are never forced to that size: the export always keeps the complete customer population and the same 30-column SPO-ready structure.</p>
         </div>
         <div class="checks">
-          <div class="check"><b>01</b><div><strong>Clean input</strong><span>Work with anonymised customer and order IDs.</span></div></div>
-          <div class="check"><b>02</b><div><strong>Comparable periods</strong><span>Measure P1 and P2 using the same time window.</span></div></div>
-          <div class="check"><b>03</b><div><strong>Explicit scoring</strong><span>Make R/F/M weights and factor ranges visible and editable.</span></div></div>
-          <div class="check"><b>04</b><div><strong>Commercial activation</strong><span>Translate movement into treatment, channel and estimated cost.</span></div></div>
+          <div class="check"><b>01</b><div><strong>Stable integration key</strong><span>Select an existing CRM, loyalty, hashed-email or ERP identifier and preserve it as <code>customer_key</code>.</span></div></div>
+          <div class="check"><b>02</b><div><strong>Three behavioural perspectives</strong><span>Transaction RFM is the period engine; Content and Post-sale RFM can be added as customer-level behavioural layers.</span></div></div>
+          <div class="check"><b>03</b><div><strong>Exact customer cardinality</strong><span>Unique customers must always equal SPO-ready export rows.</span></div></div>
+          <div class="check"><b>04</b><div><strong>Planner-ready output</strong><span>The fourth tool receives the full population and decides the final SPO segments, objectives and loyalty mechanics.</span></div></div>
         </div>
       </div>
     </section>
@@ -289,9 +329,9 @@
       <div class="wrap">
         <div class="tool-intro">
           <div>
-            <span class="kicker">RFM Dynamic Lab</span>
-            <h2>Learn the method and calculate your portfolio step by step</h2>
-            <p>Use the navigation to move through the Academy, configure the model, load anonymised orders and generate the portfolio diagnosis. Each step tells you what you are doing, why it matters and what comes next.</p>
+            <span class="kicker">Dynamic RFM · SPO-ready Lab</span>
+            <h2>Learn the method, test Don Espadín and export a cross-pill customer dataset</h2>
+            <p>Use the Academy to understand the model, then load the 266-customer Don Espadín demo or map your own source fields. The analytical result and the interoperability export are generated from the same customer population.</p>
           </div>
           <div class="progress-box" aria-label="Progress">
             <div class="progress-meta"><span id="progressLabel">Step 1 of 9</span><span id="progressPct">11%</span></div>
@@ -303,20 +343,20 @@
           <aside class="side-nav" aria-label="RFM learning and laboratory steps">
             <div class="nav-group">
               <div class="nav-group-title">Academy</div>
-              <button class="step-btn active" type="button" data-step-target="a1"><span class="num">01</span><span>Origin & purpose</span></button>
-              <button class="step-btn" type="button" data-step-target="a2"><span class="num">02</span><span>From data to RFM code</span></button>
-              <button class="step-btn" type="button" data-step-target="a3"><span class="num">03</span><span>Dynamic movement</span></button>
+              <button class="step-btn active" type="button" data-step-target="a1"><span class="num">01</span><span>Loyalty architecture</span></button>
+              <button class="step-btn" type="button" data-step-target="a2"><span class="num">02</span><span>RFM perspectives</span></button>
+              <button class="step-btn" type="button" data-step-target="a3"><span class="num">03</span><span>Cognitive category</span></button>
             </div>
             <div class="nav-group">
               <div class="nav-group-title">Laboratory</div>
-              <button class="step-btn" type="button" data-step-target="l1"><span class="num">01</span><span>Configure model</span></button>
-              <button class="step-btn" type="button" data-step-target="l2"><span class="num">02</span><span>Load orders</span></button>
-              <button class="step-btn" type="button" data-step-target="l3"><span class="num">03</span><span>Marketing lens</span></button>
+              <button class="step-btn" type="button" data-step-target="l1"><span class="num">01</span><span>Configure RFM</span></button>
+              <button class="step-btn" type="button" data-step-target="l2"><span class="num">02</span><span>Map integration data</span></button>
+              <button class="step-btn" type="button" data-step-target="l3"><span class="num">03</span><span>Action rules</span></button>
             </div>
             <div class="nav-group">
               <div class="nav-group-title">Output</div>
               <button class="step-btn" type="button" data-step-target="out1"><span class="num">01</span><span>Portfolio dashboard</span></button>
-              <button class="step-btn" type="button" data-step-target="out2"><span class="num">02</span><span>Operational detail</span></button>
+              <button class="step-btn" type="button" data-step-target="out2"><span class="num">02</span><span>SPO-ready export</span></button>
               <button class="step-btn" type="button" data-step-target="out3"><span class="num">03</span><span>Executive summary</span></button>
             </div>
           </aside>
@@ -332,48 +372,54 @@
             </div>
             <div class="panel-body">
 
-              <section class="step-pane active" data-step="a1" data-meta="Academy · 01" data-title="Origin and purpose of RFM" data-desc="Understand the three behavioural signals before touching the model." data-badge="Learn">
-                <p class="lead">RFM is a simple and powerful way to read commercial behaviour. Instead of looking only at total sales, it asks three questions: how recently did the customer buy, how often do they buy and how much economic value do they generate?</p>
+              <section class="step-pane active" data-step="a1" data-meta="Academy · 01" data-title="The four-tool DOC ROI loyalty architecture" data-desc="Understand where Dynamic RFM ends and where SPO begins." data-badge="Learn">
+                <p class="lead">Dynamic RFM is the behavioural intelligence component of a four-tool loyalty architecture. It must create useful analysis today without closing strategic decisions that belong to the Loyalty Strategy Planner.</p>
                 <div class="content-grid">
-                  <div class="concept"><strong>Recency</strong><p>How close the customer's latest purchase is to the end of the analysed period.</p></div>
-                  <div class="concept"><strong>Frequency</strong><p>How many distinct orders the customer placed during the period.</p></div>
-                  <div class="concept"><strong>Monetary</strong><p>The total order revenue generated by the customer during the period.</p></div>
+                  <div class="concept"><strong>1 · Dynamic RFM</strong><p>Produces behavioural evidence, period movement and a customer-level SPO-ready RFM dataset.</p></div>
+                  <div class="concept"><strong>2 · NPS</strong><p>Produces relationship intelligence at the same <code>customer_key</code> level.</p></div>
+                  <div class="concept"><strong>3 · ABCD</strong><p>Produces product/service intelligence at the same <code>customer_key</code> level.</p></div>
                 </div>
-                <div class="callout"><strong>Why it still matters</strong><p>RFM turns transaction data that most companies already have into decisions people can understand: protect valuable customers, recover cooling relationships, activate recent buyers and avoid spending budget without behavioural evidence.</p></div>
-                <div class="section-nav"><span></span><button class="btn btn-dark" type="button" data-next="a2">Next · Build the RFM code</button></div>
+                <div class="callout"><strong>4 · Loyalty Strategy Planner / SPO Builder</strong><p>The fourth tool merges RFM + NPS + ABCD using <code>customer_key</code>. Only there should the user inspect the SPO distribution, choose score ranges or percentiles, create named segments, assign economic objectives and loyalty mechanics, and calculate the final strategic plan.</p></div>
+                <div class="callout warning"><strong>Boundary condition</strong><p>This RFM tool does <strong>not</strong> calculate the final SPO and does not preselect Top 10%, Top 15%, Top 20%, Diamond or any other final loyalty segment.</p></div>
+                <div class="section-nav"><span></span><button class="btn btn-dark" type="button" data-next="a2">Next · Three RFM perspectives</button></div>
               </section>
 
-              <section class="step-pane" data-step="a2" data-meta="Academy · 02" data-title="From data to the RFM code" data-desc="Convert real behaviour into comparable 1–5 factors." data-badge="Learn">
-                <p class="lead">Classic RFM converts real values into ordered factors, typically from 1 to 5. A customer with a high factor for Recency, Frequency and Monetary value may be represented as <strong>555</strong>; a weak customer across all three dimensions may appear as <strong>111</strong>.</p>
-                <div class="callout"><strong>Simple example</strong><p>If Customer A bought 12 days ago, placed 8 orders and generated €900, the profile could sit close to 555. If Customer B bought 300 days ago, placed one order and generated €40, the profile could sit close to 111. The point is not to memorise codes; it is to understand the behaviour behind them.</p></div>
-                <div class="callout warning"><strong>Common error: counting products instead of orders</strong><p>If one order contains five products, it is still one purchase for Frequency. Counting five product lines as five purchases inflates the customer's frequency. This laboratory consolidates repeated order IDs before the RFM calculation.</p></div>
-                <div class="section-nav"><button class="btn btn-secondary" type="button" data-prev="a1">Previous</button><button class="btn btn-dark" type="button" data-next="a3">Next · Make it dynamic</button></div>
+              <section class="step-pane" data-step="a2" data-meta="Academy · 02" data-title="Three behavioural RFM perspectives" data-desc="Separate transaction, content and post-sale behaviour before consolidating one customer row." data-badge="Learn">
+                <p class="lead">The DOC ROI loyalty framework recognises three behavioural perspectives. They can coexist in the analytical engine, but the SPO-ready export must still contain exactly one row per <code>customer_key</code>.</p>
+                <div class="content-grid">
+                  <div class="concept"><strong>Content / Marketing RFM</strong><p><b>R</b> = recency of identifiable interaction. <b>F</b> = interaction frequency. <b>M</b> = attributable economic or commercial value.</p></div>
+                  <div class="concept"><strong>Transaction RFM</strong><p><b>R</b> = recency of purchase. <b>F</b> = purchase frequency. <b>M</b> = monetary value.</p></div>
+                  <div class="concept"><strong>Post-sale / Relationship RFM</strong><p><b>R</b> = recency of service/support interaction. <b>F</b> = service/request frequency. <b>M</b> = economic relationship impact or opportunity.</p></div>
+                </div>
+                <div class="contract-note"><strong>One person, one export row</strong><p>If several RFM layers are available, the tool places them in different columns of the same customer row. It never creates three SPO-ready rows for the same person.</p></div>
+                <div class="callout warning"><strong>Important interpretation</strong><p>Post-sale activity is behavioural evidence, not satisfaction. NPS provides relationship sentiment. If you already have a validated Content or Post-sale RFM score, map that optional score directly; otherwise this tool derives a relative 1–5 behavioural score from the mapped metrics.</p></div>
+                <div class="section-nav"><button class="btn btn-secondary" type="button" data-prev="a1">Previous</button><button class="btn btn-dark" type="button" data-next="a3">Next · Cognitive category</button></div>
               </section>
 
-              <section class="step-pane" data-step="a3" data-meta="Academy · 03" data-title="What changes when RFM becomes dynamic" data-desc="Compare two equivalent snapshots and interpret trajectory." data-badge="Learn">
-                <p class="lead">Classic RFM is a photograph. Dynamic RFM compares two photographs: the previous period (P1) and the current period (P2). The question is no longer only “where is this customer?” but also “how is this relationship moving?”</p>
+              <section class="step-pane" data-step="a3" data-meta="Academy · 03" data-title="Dynamic movement and Cognitive Category" data-desc="Compare P1 and P2 and convert current behavioural evidence into a machine-readable category." data-badge="Learn">
+                <p class="lead">Dynamic RFM compares two equivalent periods. The export uses only three movement values: <strong>Growing</strong>, <strong>Stable</strong> and <strong>Declining</strong>.</p>
                 <div class="movement-grid">
-                  <div class="movement"><h4>Upward movement</h4><p>The customer moves to a stronger segment. The relationship may need recognition, consolidation or development.</p></div>
-                  <div class="movement"><h4>Stability</h4><p>The customer remains in the same segment. The relationship may need maintenance, automation or observation.</p></div>
-                  <div class="movement"><h4>Deterioration</h4><p>The customer moves to a weaker segment. The relationship may need preventive recovery, a call or an economic incentive.</p></div>
+                  <div class="movement"><h4>Growing</h4><p>The current behavioural band is stronger than the previous period.</p></div>
+                  <div class="movement"><h4>Stable</h4><p>The current behavioural band remains at the same level.</p></div>
+                  <div class="movement"><h4>Declining</h4><p>The current behavioural band is weaker than the previous period.</p></div>
                 </div>
-                <div class="callout"><strong>The strategic advantage</strong><p>Two customers can end today in the same segment and still require opposite actions. One may be improving while the other is falling. Trajectory changes the decision.</p></div>
+                <div class="callout"><strong>Cognitive Category</strong><p>The tool combines the available RFM evidence with period movement to generate <code>cognitive_score</code> as an integer from 1 to 5, <code>cognitive_category</code> as 1-star to 5-star, and <code>cognitive_movement</code> using the exact movement terms above. This is a behavioural interpretation, <strong>not the final SPO</strong>.</p></div>
                 <div class="section-nav"><button class="btn btn-secondary" type="button" data-prev="a2">Previous</button><button class="btn btn-blue" type="button" data-next="l1">Open the laboratory</button></div>
               </section>
 
-              <section class="step-pane" data-step="l1" data-meta="Laboratory · 01" data-title="Configure time, scoring and segments" data-desc="Define the comparable periods and the rules used to interpret behaviour." data-badge="Configure">
-                <div class="callout"><strong>What you are doing</strong><p>You define the analysis cut-off date, the size of the two comparable windows, R/F/M weights, factor ranges and the maximum deterioration rate you are willing to tolerate in the portfolio.</p></div>
+              <section class="step-pane" data-step="l1" data-meta="Laboratory · 01" data-title="Configure comparable periods and RFM scoring" data-desc="Define the analytical windows and transparent 1–5 factor rules." data-badge="Configure">
+                <div class="callout"><strong>Production principle</strong><p>The scoring configuration is editable. The customer population is not. A real source with N unique integration keys must return N SPO-ready customer rows.</p></div>
                 <div class="form-section">
-                  <h4>1. Time and tolerance</h4><p class="hint">P1 and P2 always have the same duration. P2 ends on the analysis date; P1 is the immediately preceding window.</p>
+                  <h4>1. Comparable periods</h4><p class="hint">P1 and P2 have the same duration. The SPO-ready fields <code>period_p1</code> and <code>period_p2</code> store the corresponding period-end dates in ISO YYYY-MM-DD format.</p>
                   <div class="form-grid">
-                    <div class="field"><label for="analysisDate">Analysis end date</label><input id="analysisDate" type="date" /><small>Reference date from which Recency is calculated.</small></div>
-                    <div class="field"><label for="periodDays">Length of each period</label><select id="periodDays"><option value="30">30 days</option><option value="60">60 days</option><option value="90" selected>90 days</option><option value="180">180 days</option></select><small>P1 and P2 remain directly comparable.</small></div>
-                    <div class="field"><label for="churnTolerance">Tolerable deterioration (%)</label><input id="churnTolerance" type="number" min="0" max="100" step="0.1" value="15" /><small>Maximum share of customers you accept moving to a weaker segment.</small></div>
-                    <div class="field"><label for="historyHorizon">Historical horizon</label><select id="historyHorizon"><option value="180">6 months</option><option value="365" selected>12 months</option><option value="730">24 months</option></select><small>Recommended memory when preparing the source dataset.</small></div>
+                    <div class="field"><label for="analysisDate">P2 analysis end date</label><input id="analysisDate" type="date" /><small>Reference date for current Recency.</small></div>
+                    <div class="field"><label for="periodDays">Length of each period</label><select id="periodDays"><option value="30">30 days</option><option value="60">60 days</option><option value="90" selected>90 days</option><option value="180">180 days</option></select><small>P1 is the immediately preceding window.</small></div>
+                    <div class="field"><label for="churnTolerance">Declining portfolio reference (%)</label><input id="churnTolerance" type="number" min="0" max="100" step="0.1" value="15" /><small>Diagnostic reference only; it does not define a final loyalty segment.</small></div>
+                    <div class="field"><label for="historyHorizon">Historical horizon</label><select id="historyHorizon"><option value="180">6 months</option><option value="365" selected>12 months</option><option value="730">24 months</option></select><small>Recommended source-data memory for Recency.</small></div>
                   </div>
                 </div>
                 <div class="form-section">
-                  <h4>2. R/F/M weights</h4><p class="hint">Weights are normalised automatically at calculation time. Use 100 in total for easier governance.</p>
+                  <h4>2. Transaction R/F/M weights</h4><p class="hint">Weights are normalised automatically. These weights create the analytical transaction RFM score, not the final SPO.</p>
                   <div class="form-grid cols-3">
                     <div class="field"><label for="weightR">Recency weight</label><input id="weightR" type="number" min="0" max="100" value="35" /></div>
                     <div class="field"><label for="weightF">Frequency weight</label><input id="weightF" type="number" min="0" max="100" value="35" /></div>
@@ -382,83 +428,111 @@
                   <div id="weightStatus" class="status">Current total: 100%.</div>
                 </div>
                 <div class="form-section">
-                  <h4>3. Factor ranges</h4><p class="hint">Classroom defaults only. Edit these thresholds to match your business economics before using the model with real data.</p>
-                  <div class="table-wrap">
-                    <table aria-label="RFM factor ranges"><thead><tr><th>Factor</th><th>Recency from (days)</th><th>Recency to</th><th>Orders from</th><th>Orders to</th><th>Revenue from</th><th>Revenue to</th></tr></thead><tbody id="factorRows"></tbody></table>
-                  </div>
-                </div>
-                <div class="form-section">
-                  <h4>4. Segments</h4><p class="hint">The weighted RFM score is mapped to five portfolio segments. Segment order drives the movement logic.</p>
-                  <div class="table-wrap">
-                    <table aria-label="RFM segments"><thead><tr><th>Level</th><th>Segment name</th><th>Score from</th><th>Score to</th><th>Interpretation</th></tr></thead><tbody id="segmentRows"></tbody></table>
-                  </div>
-                  <div class="inline-actions"><button class="btn btn-dark" id="validateSegments" type="button">Validate configuration</button></div>
+                  <h4>3. Transaction factor ranges</h4><p class="hint">Classroom defaults for a 90-day Don Espadín exercise. Edit the thresholds to match your own purchasing cycle and economics.</p>
+                  <div class="table-wrap"><table aria-label="RFM factor ranges"><thead><tr><th>Factor</th><th>Recency from</th><th>Recency to</th><th>Orders from</th><th>Orders to</th><th>Revenue from</th><th>Revenue to</th></tr></thead><tbody id="factorRows"></tbody></table></div>
+                  <div class="inline-actions"><button class="btn btn-dark" id="validateSegments" type="button">Validate RFM configuration</button></div>
                   <div id="configStatus" class="status">Configuration not yet validated.</div>
                 </div>
-                <div class="section-nav"><button class="btn btn-secondary" type="button" data-prev="a3">Previous</button><button class="btn btn-blue" type="button" data-next="l2">Next · Load orders</button></div>
+                <div class="section-nav"><button class="btn btn-secondary" type="button" data-prev="a3">Previous</button><button class="btn btn-blue" type="button" data-next="l2">Next · Map integration data</button></div>
               </section>
 
-              <section class="step-pane" data-step="l2" data-meta="Laboratory · 02" data-title="Load anonymised orders" data-desc="Bring the minimum viable transaction dataset into the model." data-badge="Input">
-                <div class="callout"><strong>Required fields</strong><p><code>customer_id</code>, <code>order_id</code>, <code>order_date</code> and <code>order_revenue</code>. Names, surnames, emails and phone numbers are not required. For compatibility, the Spanish aliases <code>cliente_id</code>, <code>pedido_id</code>, <code>fecha_pedido</code> and <code>ingreso_pedido</code> are also accepted.</p></div>
-                <div class="callout warning"><strong>Orders with several product lines</strong><p>For RFM, one order must count once. If the same order ID appears several times for the same customer, the laboratory consolidates those rows and sums their revenue. If one order ID appears under different customers, validation stops.</p></div>
+              <section class="step-pane" data-step="l2" data-meta="Laboratory · 02" data-title="Integration Key Setup and source mapping" data-desc="Select the stable customer key, detect source fields and preserve one customer identity across all loyalty pills." data-badge="Input">
+                <div class="callout"><strong>INTEGRATION KEY SETUP</strong><p>For real data, select the existing field that uniquely identifies the customer: CRM customer ID, loyalty member ID, hashed email ID, ERP customer ID or another stable identifier. The tool preserves it as <code>customer_key</code> and also preserves the original local identifier as <code>source_customer_id</code>. Row number is never used as an integration key.</p></div>
                 <div class="form-section">
-                  <h4>1. Import data</h4><p class="hint">Upload a CSV file or paste the table from Excel or Google Sheets.</p>
-                  <div class="field"><label for="csvFile">Select CSV file</label><input id="csvFile" type="file" accept=".csv,text/csv" /></div>
-                  <div class="inline-actions"><button class="btn btn-secondary" id="downloadTemplate" type="button">Download CSV template</button><button class="btn btn-blue" id="loadExample" type="button">Load example · 168 customers</button></div>
+                  <h4>1. Dataset and source</h4><p class="hint">Use the fixed Don Espadín demo or upload your own CSV. The demo contains exactly 266 fictional customers: DE-0001 through DE-0266.</p>
+                  <div class="form-grid">
+                    <div class="field"><label for="datasetId">dataset_id</label><input id="datasetId" type="text" value="" placeholder="e.g. DON_ESPADIN_DEMO_2027" /><small>Logical name for this dataset.</small></div>
+                    <div class="field"><label for="csvFile">Select CSV file</label><input id="csvFile" type="file" accept=".csv,text/csv" /></div>
+                  </div>
+                  <div class="inline-actions"><button class="btn btn-secondary" id="downloadTemplate" type="button">Download input template</button><button class="btn btn-blue" id="loadExample" type="button">Load Don Espadín · 266 customers</button></div>
                 </div>
                 <div class="form-section">
-                  <h4>2. Review or paste the table</h4><p class="hint">Keep only the four required columns. The first row must contain field names.</p>
-                  <label class="sr-only" for="csvText">CSV table</label><textarea id="csvText" spellcheck="false" placeholder="customer_id,order_id,order_date,order_revenue\nC001,O0001,2026-08-04,129.90"></textarea>
-                  <label class="checkbox-row"><input id="privacyConfirm" type="checkbox" /><span>I confirm that the loaded data contains no personal data and that I am working with anonymised IDs in accordance with the <a href="https://docroi.marketing/aviso-legal/" target="_blank" rel="noreferrer"><strong>DOC ROI legal notice</strong></a>.</span></label>
-                  <div class="inline-actions"><button class="btn btn-dark" id="validateData" type="button">Validate and consolidate orders</button></div>
+                  <h4>2. Review / paste the source table</h4><p class="hint">Transaction fields are required for the Dynamic RFM period engine. Content and Post-sale fields are optional customer-level layers.</p>
+                  <label class="sr-only" for="csvText">CSV table</label><textarea id="csvText" spellcheck="false" placeholder="customer_key,source_customer_id,order_id,order_date,order_revenue
+C001,C001,O0001,2027-12-04,129.90"></textarea>
+                  <div class="inline-actions"><button class="btn btn-secondary" id="inspectData" type="button">Inspect source fields</button></div>
+                  <div id="inspectStatus" class="status">Source fields not yet inspected.</div>
+                </div>
+                <div class="form-section">
+                  <h4>3. Map the integration key and behavioural fields</h4><p class="hint">The selectors below are populated from your source headers. Optional fields can remain “Not available”.</p>
+                  <div class="mapping-group"><h5>Mandatory identity</h5><div class="mapping-grid">
+                    <div class="field"><label for="mapCustomerKey">customer_key source field</label><select id="mapCustomerKey" class="map-select"><option value="">Inspect source first</option></select></div>
+                    <div class="field"><label for="mapSourceCustomerId">source_customer_id source field</label><select id="mapSourceCustomerId" class="map-select"><option value="">Inspect source first</option></select></div>
+                  </div></div>
+                  <div class="mapping-group"><h5>Transaction RFM · required for period comparison</h5><div class="mapping-grid">
+                    <div class="field"><label for="mapOrderId">Order ID</label><select id="mapOrderId" class="map-select"></select></div>
+                    <div class="field"><label for="mapOrderDate">Order date</label><select id="mapOrderDate" class="map-select"></select></div>
+                    <div class="field"><label for="mapOrderRevenue">Order revenue</label><select id="mapOrderRevenue" class="map-select"></select></div>
+                  </div></div>
+                  <div class="mapping-group"><h5>Content / Marketing RFM · optional</h5><div class="mapping-grid">
+                    <div class="field"><label for="mapContentRecency">Content recency</label><select id="mapContentRecency" class="map-select optional-map"></select></div>
+                    <div class="field"><label for="mapContentFrequency">Content frequency</label><select id="mapContentFrequency" class="map-select optional-map"></select></div>
+                    <div class="field"><label for="mapContentValue">Content value</label><select id="mapContentValue" class="map-select optional-map"></select></div>
+                    <div class="field"><label for="mapContentScore">Validated content RFM score · optional override</label><select id="mapContentScore" class="map-select optional-map"></select></div>
+                  </div></div>
+                  <div class="mapping-group"><h5>Post-sale / Relationship RFM · optional</h5><div class="mapping-grid">
+                    <div class="field"><label for="mapPostRecency">Post-sale recency</label><select id="mapPostRecency" class="map-select optional-map"></select></div>
+                    <div class="field"><label for="mapPostFrequency">Post-sale frequency</label><select id="mapPostFrequency" class="map-select optional-map"></select></div>
+                    <div class="field"><label for="mapPostImpact">Post-sale economic impact</label><select id="mapPostImpact" class="map-select optional-map"></select></div>
+                    <div class="field"><label for="mapPostScore">Validated post-sale RFM score · optional override</label><select id="mapPostScore" class="map-select optional-map"></select></div>
+                  </div></div>
+                  <label class="checkbox-row"><input id="keyConfirm" type="checkbox" /><span>I confirm that the selected <code>customer_key</code> field is the stable identifier that will also be used in the DOC ROI NPS and ABCD files.</span></label>
+                  <label class="checkbox-row"><input id="privacyConfirm" type="checkbox" /><span>I confirm that I am working with anonymised or appropriately protected identifiers and in accordance with the <a href="https://docroi.marketing/aviso-legal/" target="_blank" rel="noreferrer"><strong>DOC ROI legal notice</strong></a>.</span></label>
+                  <div class="inline-actions"><button class="btn btn-dark" id="validateData" type="button">Validate source and customer cardinality</button></div>
                   <div id="dataStatus" class="status">Data not yet validated.</div>
+                  <div class="stats-grid" id="sourceStats"><div class="stat-box"><span>Source records</span><strong>—</strong></div><div class="stat-box"><span>Unique customers</span><strong>—</strong></div><div class="stat-box"><span>Export rows</span><strong>—</strong></div></div>
                 </div>
-                <div class="section-nav"><button class="btn btn-secondary" type="button" data-prev="l1">Previous</button><button class="btn btn-blue" type="button" data-next="l3">Next · Define treatments</button></div>
+                <div class="section-nav"><button class="btn btn-secondary" type="button" data-prev="l1">Previous</button><button class="btn btn-blue" type="button" data-next="l3">Next · Action rules</button></div>
               </section>
 
-              <section class="step-pane" data-step="l3" data-meta="Laboratory · 03" data-title="Marketing lens: turn movement into action" data-desc="Translate trajectory into a treatment, a channel and an estimated investment." data-badge="Activate">
-                <div class="callout"><strong>What the marketing lens does</strong><p>It is the business rule that converts a trajectory into a commercial treatment. Not every customer needs the same incentive: the treatment depends on whether the relationship improves, remains stable or deteriorates.</p></div>
+              <section class="step-pane" data-step="l3" data-meta="Laboratory · 03" data-title="RFM action rules before the Loyalty Strategy Planner" data-desc="Attach a provisional operational recommendation without defining the final loyalty strategy." data-badge="Activate">
+                <div class="callout"><strong>Keep the strategic boundary clear</strong><p><code>recommended_action</code>, <code>recommended_channel</code> and <code>estimated_cost</code> are operational RFM recommendations. The final economic objectives, loyalty mechanics and named strategic segments belong to the Loyalty Strategy Planner / SPO Builder.</p></div>
                 <div id="treatmentRows"></div>
                 <div class="form-section">
-                  <h4>Calculate the model</h4><p class="hint">The dashboard, operational detail and executive summary will activate when the configuration and order data are valid.</p>
-                  <div class="inline-actions"><button class="btn btn-blue" id="calculateRfm" type="button">Calculate Dynamic RFM</button></div>
+                  <h4>Calculate behavioural intelligence</h4><p class="hint">The calculation preserves every unique customer key. The final SPO-ready output must contain the same number of rows as unique customers in the source.</p>
+                  <div class="inline-actions"><button class="btn btn-blue" id="calculateRfm" type="button">Calculate Dynamic RFM + SPO-ready dataset</button></div>
                   <div id="calcStatus" class="status">Waiting for calculation.</div>
                 </div>
                 <div class="section-nav"><button class="btn btn-secondary" type="button" data-prev="l2">Previous</button><button class="btn btn-dark" type="button" data-next="out1">Open dashboard</button></div>
               </section>
 
-              <section class="step-pane" data-step="out1" data-meta="Output · 01" data-title="Portfolio dashboard" data-desc="Read segment distribution, migration, ARPU and the Recency × Frequency structure." data-badge="Analyse">
+              <section class="step-pane" data-step="out1" data-meta="Output · 01" data-title="Behavioural portfolio dashboard" data-desc="Read cognitive categories, movement, RFM band migration, ARPU and layer availability." data-badge="Analyse">
                 <div id="dashboardPlaceholder" class="placeholder">Calculate the model to activate the portfolio dashboard.</div>
                 <div id="dashboardContent" hidden>
                   <div class="kpi-grid" id="kpis"></div>
                   <div class="dash-grid">
-                    <div class="dash-block"><h4>P1 vs P2 distribution</h4><p>Compare how the relative weight of each segment changes.</p><div class="legend"><span><i class="p1"></i>P1</span><span><i class="p2"></i>P2</span></div><div id="distributionChart"></div></div>
-                    <div class="dash-block matrix"><h4>5×5 migration matrix</h4><p>Rows = origin in P1. Columns = destination in P2.</p><div class="table-wrap" id="migrationMatrix"></div></div>
-                    <div class="dash-block"><h4>Average ARPU by P2 segment</h4><p>Use actual average revenue to anchor retention budget discussions.</p><div class="table-wrap" id="arpuTable"></div></div>
-                    <div class="dash-block matrix"><h4>Recency × Frequency matrix · P2</h4><p>Cross proximity and repetition to read risk, opportunity and priority.</p><div class="table-wrap" id="rfMatrix"></div></div>
+                    <div class="dash-block"><h4>Cognitive Category distribution</h4><p>Current behavioural interpretation from 1-star to 5-star. This is not the final SPO.</p><div id="distributionChart"></div></div>
+                    <div class="dash-block matrix"><h4>RFM band migration · P1 → P2</h4><p>Rows = P1 analytical band. Columns = P2 analytical band.</p><div class="table-wrap" id="migrationMatrix"></div></div>
+                    <div class="dash-block"><h4>Average ARPU by Cognitive Category</h4><p>ARPU is calculated at category level from P2 transaction revenue and written as a numeric value into each customer row.</p><div class="table-wrap" id="arpuTable"></div></div>
+                    <div class="dash-block"><h4>Behavioural layer availability</h4><p>See how many customers contribute Transaction, Content and Post-sale evidence.</p><div class="table-wrap" id="layerAvailability"></div></div>
                   </div>
                 </div>
-                <div class="section-nav"><button class="btn btn-secondary" type="button" data-prev="l3">Previous</button><button class="btn btn-dark" type="button" data-next="out2">Next · Operational detail</button></div>
+                <div class="section-nav"><button class="btn btn-secondary" type="button" data-prev="l3">Previous</button><button class="btn btn-dark" type="button" data-next="out2">Next · SPO-ready export</button></div>
               </section>
 
-              <section class="step-pane" data-step="out2" data-meta="Output · 02" data-title="Operational detail and CSV" data-desc="Turn the diagnosis into a list that teams can activate and audit." data-badge="Operate">
-                <div class="callout"><strong>What this file is for</strong><p>Use it to activate campaigns, prioritise calls, document decisions and review customers by segment, movement and estimated treatment cost.</p></div>
-                <div class="inline-actions"><button class="btn btn-dark" id="downloadFullCsv" type="button" disabled>Download full CSV</button></div>
-                <div id="detailPlaceholder" class="placeholder">Calculate the model to activate the operational table.</div>
+              <section class="step-pane" data-step="out2" data-meta="Output · 02" data-title="SPO-ready RFM interoperability dataset" data-desc="Validate the absolute data contract and download one standardised row per customer." data-badge="Integrate">
+                <div class="callout"><strong>SPO-READY RFM EXPORT</strong><p>The export is an interoperability product, not merely a classroom download. Its structure never changes with portfolio size: N unique customers in = N customer-level rows out.</p></div>
+                <div class="contract-columns"><strong>Schema version:</strong> DOCROI_SPO_1.0<br><strong>30 required columns:</strong> schema_version · dataset_id · customer_key · source_customer_id · period_p1 · period_p2 · content_rfm_available · content_recency · content_frequency · content_value · content_rfm_score · transaction_rfm_available · transaction_recency · transaction_frequency · transaction_monetary · transaction_rfm_score · post_sale_rfm_available · post_sale_recency · post_sale_frequency · post_sale_economic_impact · post_sale_rfm_score · cognitive_score · cognitive_category · cognitive_movement · segment_p1 · segment_p2 · recommended_action · recommended_channel · estimated_cost · arpu</div>
+                <div class="stats-grid" id="exportStats"><div class="stat-box"><span>Source records</span><strong>—</strong></div><div class="stat-box"><span>Unique customers</span><strong>—</strong></div><div class="stat-box"><span>Export rows</span><strong>—</strong></div></div>
+                <div id="integrationValidation" class="validation-panel"><div class="validation-title">INTEGRATION VALIDATION: NOT RUN</div><p class="micro">Validation checks key uniqueness, cardinality, cognitive score, movement values, numeric cost/ARPU, ISO dates and the absence of currency symbols in numeric fields.</p></div>
+                <div class="inline-actions"><button class="btn btn-secondary" id="validateIntegration" type="button" disabled>Run integration validation</button><button class="btn btn-dark" id="downloadFullCsv" type="button" disabled>DOWNLOAD SPO-READY RFM DATA</button></div>
+                <p class="micro"><strong>Download message:</strong> “This file contains one standardised row per customer and is ready to merge with DOC ROI NPS and ABCD Product Intelligence inside the Loyalty Strategy Planner.”</p>
+                <div id="detailPlaceholder" class="placeholder">Calculate the model to generate the SPO-ready customer table.</div>
                 <div id="detailTableWrap" class="table-wrap" hidden></div>
+                <p id="previewNote" class="preview-note" hidden></p>
                 <div class="section-nav"><button class="btn btn-secondary" type="button" data-prev="out1">Previous</button><button class="btn btn-dark" type="button" data-next="out3">Next · Executive summary</button></div>
               </section>
 
-              <section class="step-pane" data-step="out3" data-meta="Output · 03" data-title="Printable executive summary" data-desc="Concentrate the portfolio diagnosis into decision-ready language." data-badge="Decide">
+              <section class="step-pane" data-step="out3" data-meta="Output · 03" data-title="Printable executive and integration summary" data-desc="Concentrate the behavioural diagnosis and confirm whether the dataset is ready for the next DOC ROI loyalty pills." data-badge="Decide">
                 <div id="summaryPlaceholder" class="placeholder">Calculate the model to generate the executive summary.</div>
                 <div id="summaryContent" hidden>
                   <div class="summary-grid">
                     <div class="summary-item"><strong>Portfolio diagnosis</strong><p id="sumDiagnosis"></p></div>
-                    <div class="summary-item"><strong>Segments and value</strong><p id="sumSegments"></p></div>
-                    <div class="summary-item"><strong>Deterioration and tolerance</strong><p id="sumChurn"></p></div>
-                    <div class="summary-item"><strong>Priority actions</strong><p id="sumActions"></p></div>
+                    <div class="summary-item"><strong>Cognitive distribution</strong><p id="sumSegments"></p></div>
+                    <div class="summary-item"><strong>Movement</strong><p id="sumChurn"></p></div>
+                    <div class="summary-item"><strong>Interoperability readiness</strong><p id="sumActions"></p></div>
                   </div>
-                  <blockquote class="closing-quote">Classic RFM sorted customers. Scoring made them comparable. Dynamic RFM interprets their movement. Automation turns that interpretation into relationship.</blockquote>
+                  <blockquote class="closing-quote">Dynamic RFM supplies behavioural intelligence. NPS supplies relationship intelligence. ABCD supplies product intelligence. The Loyalty Strategy Planner merges the complete customer population by customer_key and builds the final SPO strategy.</blockquote>
                   <div class="inline-actions no-print"><button class="btn btn-dark" id="printSummary" type="button">Print / save as PDF</button><button class="btn btn-secondary" id="downloadTxt" type="button">Download summary TXT</button></div>
                 </div>
                 <div class="section-nav"><button class="btn btn-secondary" type="button" data-prev="out2">Previous</button><a class="btn btn-blue" href="#resources">Continue to DIIIP</a></div>
@@ -473,15 +547,15 @@
       <div class="diiip-inner">
         <div class="closing-heading">
           <span>METHODOLOGY AT THE END OF THE JOURNEY</span>
-          <h2>DIIIP explains how transaction data becomes a customer decision</h2>
-          <p>In Dynamic RFM, value appears when anonymised orders are transformed into comparable behaviour, portfolio movement, actionable insight and a measurable commercial response.</p>
+          <h2>DIIIP explains how behavioural data becomes an interoperable loyalty asset</h2>
+          <p>Dynamic RFM creates value twice: first as an analytical diagnosis, and second as a standardised customer-level product that can be combined with NPS and ABCD evidence without losing customer identity.</p>
         </div>
         <div class="diiip-list">
-          <div class="diiip-item"><div>D</div><section><strong>Data</strong><p>Anonymised customer IDs, order IDs, order dates and order revenue.</p></section></div>
-          <div class="diiip-item"><div>I</div><section><strong>Information</strong><p>Recency, Frequency and Monetary values calculated per customer and period.</p></section></div>
-          <div class="diiip-item"><div>I</div><section><strong>Intelligence</strong><p>RFM factors, weighted scores, portfolio segments, migration and ARPU.</p></section></div>
-          <div class="diiip-item"><div>I</div><section><strong>Insights</strong><p>Evidence of upward movement, stability, deterioration, concentration of value and priority.</p></section></div>
-          <div class="diiip-item"><div>P</div><section><strong>Personalisation Actions</strong><p>Treatments, channels, estimated investment and activation rules by customer trajectory.</p></section></div>
+          <div class="diiip-item"><div>D</div><section><strong>Data</strong><p>Stable customer identifiers, transaction events and optional Content / Post-sale behavioural metrics.</p></section></div>
+          <div class="diiip-item"><div>I</div><section><strong>Information</strong><p>P1/P2 RFM values, customer-level behavioural layers and preserved integration keys.</p></section></div>
+          <div class="diiip-item"><div>I</div><section><strong>Intelligence</strong><p>Transaction scores, optional Content/Post-sale scores, cognitive category and Growing / Stable / Declining movement.</p></section></div>
+          <div class="diiip-item"><div>I</div><section><strong>Insights</strong><p>Behavioural trajectory, value concentration, ARPU, treatment cost and data-availability gaps.</p></section></div>
+          <div class="diiip-item"><div>P</div><section><strong>Personalisation Actions</strong><p>Export one SPO-ready row per customer so the Loyalty Strategy Planner can combine RFM, NPS and ABCD before defining final segments and loyalty mechanics.</p></section></div>
         </div>
       </div>
     </section>
@@ -490,8 +564,8 @@
       <div class="kai-inner">
         <div>
           <span class="kai-pill">KAI·ROI EQUATION · CUSTOMER EQUITY</span>
-          <h2>Dynamic RFM creates operational evidence for the KAI·ROI layer</h2>
-          <p>This laboratory does not redefine KAI·ROI. It creates structured evidence about customer behaviour, movement, value and activation that can later support Customer Equity reasoning, implementation decisions and ROI analysis.</p>
+          <h2>Dynamic RFM creates customer-level behavioural evidence for the KAI·ROI layer</h2>
+          <p>This laboratory does not redefine KAI·ROI or calculate the final SPO. It creates structured customer-level evidence about behaviour, movement, value and activation that can later be merged with NPS and ABCD evidence to support Customer Equity reasoning, implementation decisions and ROI analysis.</p>
           <p>The formal KAI·ROI structure remains sovereign; this tool does not calculate or reinterpret its formal variables.</p>
         </div>
         <div class="kai-card">
@@ -523,289 +597,283 @@
     'use strict';
 
     const STEP_ORDER = ['a1','a2','a3','l1','l2','l3','out1','out2','out3'];
+    const SPO_HEADERS = [
+      'schema_version','dataset_id','customer_key','source_customer_id','period_p1','period_p2',
+      'content_rfm_available','content_recency','content_frequency','content_value','content_rfm_score',
+      'transaction_rfm_available','transaction_recency','transaction_frequency','transaction_monetary','transaction_rfm_score',
+      'post_sale_rfm_available','post_sale_recency','post_sale_frequency','post_sale_economic_impact','post_sale_rfm_score',
+      'cognitive_score','cognitive_category','cognitive_movement','segment_p1','segment_p2',
+      'recommended_action','recommended_channel','estimated_cost','arpu'
+    ];
+    const MOVEMENTS = ['Growing','Stable','Declining'];
     const state = {
-      currentStep: 'a1',
-      configValid: false,
-      dataValid: false,
-      orders: [],
-      results: [],
-      summaryText: ''
+      currentStep:'a1', configValid:false, dataValid:false, integrationValid:false, isDemo:false,
+      rawRows:[], headers:[], customers:[], sourceRecords:0, uniqueCustomers:0,
+      results:[], spoRows:[], summaryText:''
     };
 
-    const $ = (sel, root=document) => root.querySelector(sel);
-    const $$ = (sel, root=document) => [...root.querySelectorAll(sel)];
-    const fmtMoney = new Intl.NumberFormat('en-GB',{style:'currency',currency:'EUR',maximumFractionDigits:2});
-    const fmtNum = new Intl.NumberFormat('en-GB',{maximumFractionDigits:1});
-    const iso = d => d.toISOString().slice(0,10);
-    const clamp = (v,min,max) => Math.min(max,Math.max(min,v));
-    const escapeHtml = s => String(s ?? '').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+    const $=(sel,root=document)=>root.querySelector(sel);
+    const $$=(sel,root=document)=>[...root.querySelectorAll(sel)];
+    const fmtMoney=new Intl.NumberFormat('en-GB',{style:'currency',currency:'EUR',maximumFractionDigits:2});
+    const fmtNum=new Intl.NumberFormat('en-GB',{maximumFractionDigits:1});
+    const clamp=(v,min,max)=>Math.min(max,Math.max(min,v));
+    const escapeHtml=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+    const iso=d=>{const x=new Date(d);x.setMinutes(x.getMinutes()-x.getTimezoneOffset());return x.toISOString().slice(0,10);};
+    const localTodayISO=()=>{const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10);};
+    const dateOnly=v=>{if(!v)return null;const d=new Date(String(v).trim()+'T12:00:00');return Number.isNaN(d.getTime())?null:d;};
+    const parseNumber=v=>{if(v===null||v===undefined||String(v).trim()==='')return null;let s=String(v).trim().replace(/\s/g,'');if(s.includes(',')&&!s.includes('.'))s=s.replace(',','.');else if(s.includes(',')&&s.includes('.'))s=s.replace(/,/g,'');const n=Number(s.replace(/[€$£]/g,''));return Number.isFinite(n)?n:null;};
+    const norm=s=>String(s??'').trim().toLowerCase().replace(/[^a-z0-9]+/g,'_').replace(/^_|_$/g,'');
+    const mean=a=>a.length?a.reduce((x,y)=>x+y,0)/a.length:0;
 
-    function localTodayISO(){
-      const d = new Date();
-      d.setMinutes(d.getMinutes()-d.getTimezoneOffset());
-      return d.toISOString().slice(0,10);
-    }
-    $('#analysisDate').value = localTodayISO();
+    $('#analysisDate').value=localTodayISO();
 
-    function showStep(step, scroll=true){
-      if(!STEP_ORDER.includes(step)) return;
-      state.currentStep = step;
+    function showStep(step,scroll=true){
+      if(!STEP_ORDER.includes(step))return;
+      state.currentStep=step;
       $$('.step-pane').forEach(p=>p.classList.toggle('active',p.dataset.step===step));
       $$('.step-btn').forEach(b=>b.classList.toggle('active',b.dataset.stepTarget===step));
-      const pane = $(`.step-pane[data-step="${step}"]`);
-      $('#panelMeta').textContent = pane.dataset.meta;
-      $('#panelTitle').textContent = pane.dataset.title;
-      $('#panelDesc').textContent = pane.dataset.desc;
-      $('#panelBadge').textContent = pane.dataset.badge;
-      const idx = STEP_ORDER.indexOf(step)+1;
-      const pct = Math.round(idx/STEP_ORDER.length*100);
-      $('#progressLabel').textContent = `Step ${idx} of ${STEP_ORDER.length}`;
-      $('#progressPct').textContent = `${pct}%`;
-      $('#progressFill').style.width = `${pct}%`;
-      if(scroll){
-        $('#laboratory').scrollIntoView({behavior:'smooth',block:'start'});
-        history.replaceState(null,'',`#${step}`);
-      }
+      const pane=$(`.step-pane[data-step="${step}"]`); if(!pane)return;
+      $('#panelMeta').textContent=pane.dataset.meta; $('#panelTitle').textContent=pane.dataset.title; $('#panelDesc').textContent=pane.dataset.desc; $('#panelBadge').textContent=pane.dataset.badge;
+      const idx=STEP_ORDER.indexOf(step)+1,pct=Math.round(idx/STEP_ORDER.length*100);
+      $('#progressLabel').textContent=`Step ${idx} of ${STEP_ORDER.length}`; $('#progressPct').textContent=`${pct}%`; $('#progressFill').style.width=`${pct}%`;
+      if(scroll){$('#laboratory').scrollIntoView({behavior:'smooth',block:'start'});history.replaceState(null,'',`#${step}`);}
     }
-
     $$('.step-btn').forEach(b=>b.addEventListener('click',()=>showStep(b.dataset.stepTarget)));
     $$('[data-next]').forEach(b=>b.addEventListener('click',()=>showStep(b.dataset.next)));
     $$('[data-prev]').forEach(b=>b.addEventListener('click',()=>showStep(b.dataset.prev)));
     $$('[data-goto]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();showStep(a.dataset.goto);}));
-    document.addEventListener('click', e=>{
-      const a=e.target.closest('a[href^="#"]');
-      if(!a || a.dataset.goto) return;
-      const id=a.getAttribute('href').slice(1);
-      const target=document.getElementById(id);
-      if(!target) return;
-      e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});history.pushState(null,'',`#${id}`);
-    });
+    document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||a.dataset.goto)return;const target=document.getElementById(a.getAttribute('href').slice(1));if(!target)return;e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});});
 
-    const factorDefaults = [
-      {factor:5,rMin:0,rMax:30,fMin:10,fMax:9999,mMin:1000,mMax:999999999},
-      {factor:4,rMin:31,rMax:60,fMin:6,fMax:9,mMin:500,mMax:999.99},
-      {factor:3,rMin:61,rMax:90,fMin:4,fMax:5,mMin:250,mMax:499.99},
-      {factor:2,rMin:91,rMax:180,fMin:2,fMax:3,mMin:100,mMax:249.99},
-      {factor:1,rMin:181,rMax:99999,fMin:0,fMax:1,mMin:0,mMax:99.99}
+    const factorDefaults=[
+      {factor:5,rMin:0,rMax:14,fMin:9,fMax:99999,mMin:900,mMax:999999999},
+      {factor:4,rMin:15,rMax:29,fMin:6,fMax:8,mMin:600,mMax:899.99},
+      {factor:3,rMin:30,rMax:44,fMin:4,fMax:5,mMin:350,mMax:599.99},
+      {factor:2,rMin:45,rMax:59,fMin:2,fMax:3,mMin:150,mMax:349.99},
+      {factor:1,rMin:60,rMax:99999,fMin:0,fMax:1,mMin:0,mMax:149.99}
     ];
-    const segmentDefaults = [
-      {level:5,name:'Champions',min:4.20,max:5.00,note:'Highest combined behavioural strength.'},
-      {level:4,name:'Loyal',min:3.40,max:4.19,note:'Strong and repeatable relationship.'},
-      {level:3,name:'Developing',min:2.60,max:3.39,note:'Middle portfolio with development potential.'},
-      {level:2,name:'At Risk',min:1.80,max:2.59,note:'Weakening or low-intensity relationship.'},
-      {level:1,name:'Dormant',min:0.00,max:1.79,note:'Very low activity or no activity in the period.'}
-    ];
-    const treatmentDefaults = {
-      Up:{category:'Growth / consolidation',action:'Recognise and develop',channel:'Email / adviser / next-best offer',pct:5},
-      Deterioration:{category:'Recovery / risk',action:'Preventive recovery',channel:'Call / assisted channel / incentive',pct:12},
-      Stable:{category:'Maintenance / observation',action:'Protect and automate',channel:'CRM journey / content / service',pct:3}
+    const treatmentDefaults={
+      Growing:{action:'Consolidate growth and develop next-best value',channel:'CRM journey / adviser / email',pct:5},
+      Stable:{action:'Protect value and maintain relevant contact',channel:'CRM journey / content / service',pct:3},
+      Declining:{action:'Review deterioration and activate recovery',channel:'Assisted channel / call / targeted incentive',pct:12}
     };
 
     function renderConfigTables(){
-      $('#factorRows').innerHTML = factorDefaults.map(r=>`<tr data-factor="${r.factor}"><td><strong>${r.factor}</strong></td><td><input aria-label="Recency from factor ${r.factor}" data-k="rMin" type="number" min="0" value="${r.rMin}"></td><td><input aria-label="Recency to factor ${r.factor}" data-k="rMax" type="number" min="0" value="${r.rMax}"></td><td><input aria-label="Frequency from factor ${r.factor}" data-k="fMin" type="number" min="0" value="${r.fMin}"></td><td><input aria-label="Frequency to factor ${r.factor}" data-k="fMax" type="number" min="0" value="${r.fMax}"></td><td><input aria-label="Monetary from factor ${r.factor}" data-k="mMin" type="number" min="0" step="0.01" value="${r.mMin}"></td><td><input aria-label="Monetary to factor ${r.factor}" data-k="mMax" type="number" min="0" step="0.01" value="${r.mMax}"></td></tr>`).join('');
-      $('#segmentRows').innerHTML = segmentDefaults.map(r=>`<tr data-level="${r.level}"><td><strong>${r.level}</strong></td><td><input aria-label="Segment name level ${r.level}" data-k="name" type="text" value="${escapeHtml(r.name)}"></td><td><input aria-label="Score from level ${r.level}" data-k="min" type="number" min="0" max="5" step="0.01" value="${r.min.toFixed(2)}"></td><td><input aria-label="Score to level ${r.level}" data-k="max" type="number" min="0" max="5" step="0.01" value="${r.max.toFixed(2)}"></td><td>${escapeHtml(r.note)}</td></tr>`).join('');
-      $('#treatmentRows').innerHTML = Object.entries(treatmentDefaults).map(([move,v])=>`<div class="form-section treatment" data-movement="${move}"><h4>${move==='Up'?'Upward movement':move}</h4><p class="hint">${move==='Up'?'Growth, consolidation or positive reactivation.':move==='Deterioration'?'Cooling relationship, risk or functional loss.':'Maintenance, observation or protection of value.'}</p><div class="form-grid cols-3"><div class="field"><label>Commercial category</label><input data-k="category" type="text" value="${escapeHtml(v.category)}"></div><div class="field"><label>Recommended action</label><input data-k="action" type="text" value="${escapeHtml(v.action)}"></div><div class="field"><label>Channel / activation</label><input data-k="channel" type="text" value="${escapeHtml(v.channel)}"></div></div><div class="field" style="max-width:280px;margin-top:14px"><label>Suggested investment · % of P2 ARPU</label><input data-k="pct" type="number" min="0" max="100" step="0.1" value="${v.pct}"><small>Used only as an estimate in the operational output.</small></div></div>`).join('');
+      $('#factorRows').innerHTML=factorDefaults.map(r=>`<tr data-factor="${r.factor}"><td><strong>${r.factor}</strong></td><td><input data-k="rMin" type="number" min="0" value="${r.rMin}"></td><td><input data-k="rMax" type="number" min="0" value="${r.rMax}"></td><td><input data-k="fMin" type="number" min="0" value="${r.fMin}"></td><td><input data-k="fMax" type="number" min="0" value="${r.fMax}"></td><td><input data-k="mMin" type="number" min="0" step="0.01" value="${r.mMin}"></td><td><input data-k="mMax" type="number" min="0" step="0.01" value="${r.mMax}"></td></tr>`).join('');
+      $('#treatmentRows').innerHTML=MOVEMENTS.map(move=>{const v=treatmentDefaults[move];return `<div class="form-section treatment" data-movement="${move}"><h4>${move}</h4><p class="hint">Operational RFM recommendation only. Final loyalty mechanics belong to the SPO Builder.</p><div class="form-grid cols-3"><div class="field"><label>Recommended action</label><input data-k="action" type="text" value="${escapeHtml(v.action)}"></div><div class="field"><label>Recommended channel</label><input data-k="channel" type="text" value="${escapeHtml(v.channel)}"></div><div class="field"><label>Estimated cost · % of ARPU</label><input data-k="pct" type="number" min="0" max="100" step="0.1" value="${v.pct}"></div></div></div>`;}).join('');
     }
     renderConfigTables();
 
-    function getFactors(){
-      return $$('#factorRows tr').map(tr=>{const o={factor:+tr.dataset.factor};$$('input',tr).forEach(i=>o[i.dataset.k]=+i.value);return o;});
-    }
-    function getSegments(){
-      return $$('#segmentRows tr').map(tr=>{const o={level:+tr.dataset.level};$$('input',tr).forEach(i=>o[i.dataset.k]=i.dataset.k==='name'?i.value.trim():+i.value);return o;}).sort((a,b)=>b.level-a.level);
-    }
-    function getTreatments(){
-      const out={};$$('.treatment').forEach(box=>{const o={};$$('input',box).forEach(i=>o[i.dataset.k]=i.dataset.k==='pct'?+i.value:i.value.trim());out[box.dataset.movement]=o;});return out;
-    }
-    function configSnapshot(){
-      return {
-        analysisDate:new Date($('#analysisDate').value+'T23:59:59'),
-        periodDays:+$('#periodDays').value,
-        churnTolerance:+$('#churnTolerance').value,
-        historyHorizon:+$('#historyHorizon').value,
-        weights:{r:+$('#weightR').value,f:+$('#weightF').value,m:+$('#weightM').value},
-        factors:getFactors(),segments:getSegments(),treatments:getTreatments()
-      };
-    }
-
-    function setStatus(el, msg, type=''){
-      el.className='status'+(type?` ${type}`:'');el.textContent=msg;
-    }
-    function updateWeightStatus(){
-      const total=+$('#weightR').value + +$('#weightF').value + +$('#weightM').value;
-      setStatus($('#weightStatus'),`Current total: ${fmtNum.format(total)}%. ${total===100?'Ready.':'The calculator will normalise these weights automatically.'}`,total===100?'ok':'warn');
-      state.configValid=false;
-    }
+    function getFactors(){return $$('#factorRows tr').map(tr=>{const o={factor:+tr.dataset.factor};$$('input',tr).forEach(i=>o[i.dataset.k]=+i.value);return o;});}
+    function getTreatments(){const out={};$$('.treatment').forEach(box=>{const o={};$$('input',box).forEach(i=>o[i.dataset.k]=i.dataset.k==='pct'?+i.value:i.value.trim());out[box.dataset.movement]=o;});return out;}
+    function configSnapshot(){return {analysisDate:new Date($('#analysisDate').value+'T23:59:59'),periodDays:+$('#periodDays').value,churnTolerance:+$('#churnTolerance').value,historyHorizon:+$('#historyHorizon').value,weights:{r:+$('#weightR').value,f:+$('#weightF').value,m:+$('#weightM').value},factors:getFactors(),treatments:getTreatments()};}
+    function setStatus(el,msg,type=''){el.className='status'+(type?` ${type}`:'');el.textContent=msg;}
+    function updateWeightStatus(){const total=+$('#weightR').value + +$('#weightF').value + +$('#weightM').value;setStatus($('#weightStatus'),`Current total: ${fmtNum.format(total)}%. ${total===100?'Ready.':'Weights will be normalised automatically.'}`,total===100?'ok':'warn');state.configValid=false;}
     ['weightR','weightF','weightM'].forEach(id=>$('#'+id).addEventListener('input',updateWeightStatus));
-    $$('#factorRows input, #segmentRows input, #analysisDate, #periodDays, #churnTolerance').forEach(el=>el.addEventListener('input',()=>{state.configValid=false;setStatus($('#configStatus'),'Configuration changed. Validate it again.','warn');}));
+    $$('#factorRows input, #analysisDate, #periodDays, #churnTolerance').forEach(el=>el.addEventListener('input',()=>{state.configValid=false;setStatus($('#configStatus'),'Configuration changed. Validate it again.','warn');}));
 
     function validateConfig(){
-      const c=configSnapshot();
-      const errors=[];
-      if(!(c.analysisDate instanceof Date) || isNaN(c.analysisDate)) errors.push('Choose a valid analysis date.');
-      if(c.periodDays<=0) errors.push('Period length must be greater than zero.');
-      const w=c.weights.r+c.weights.f+c.weights.m;if(w<=0) errors.push('At least one R/F/M weight must be greater than zero.');
-      if(c.churnTolerance<0||c.churnTolerance>100) errors.push('Deterioration tolerance must be between 0 and 100%.');
-      for(const r of c.factors){
-        for(const k of ['rMin','rMax','fMin','fMax','mMin','mMax']) if(!Number.isFinite(r[k])||r[k]<0) errors.push(`Factor ${r.factor}: all ranges must be non-negative numbers.`);
-        if(r.rMin>r.rMax||r.fMin>r.fMax||r.mMin>r.mMax) errors.push(`Factor ${r.factor}: each range must start below or at its end.`);
-      }
-      for(const s of c.segments){if(!s.name) errors.push(`Segment level ${s.level} needs a name.`);if(s.min<0||s.max>5||s.min>s.max) errors.push(`Segment ${s.name||s.level}: use a valid 0–5 score range.`);}
-      const asc=[...c.segments].sort((a,b)=>a.min-b.min);
-      for(let i=1;i<asc.length;i++){if(asc[i].min>asc[i-1].max+0.011) errors.push('Segment score ranges contain a gap.');if(asc[i].min<=asc[i-1].max-0.011) errors.push('Segment score ranges overlap.');}
+      const c=configSnapshot(),errors=[];
+      if(Number.isNaN(c.analysisDate.getTime()))errors.push('Choose a valid P2 analysis end date.');
+      if(c.periodDays<=0)errors.push('Period length must be greater than zero.');
+      if(c.weights.r+c.weights.f+c.weights.m<=0)errors.push('At least one R/F/M weight must be greater than zero.');
+      if(c.churnTolerance<0||c.churnTolerance>100)errors.push('Declining reference must be between 0 and 100%.');
+      for(const r of c.factors){for(const k of ['rMin','rMax','fMin','fMax','mMin','mMax'])if(!Number.isFinite(r[k])||r[k]<0)errors.push(`Factor ${r.factor}: ranges must be non-negative numbers.`);if(r.rMin>r.rMax||r.fMin>r.fMax||r.mMin>r.mMax)errors.push(`Factor ${r.factor}: each range must start below or at its end.`);}
       state.configValid=errors.length===0;
-      setStatus($('#configStatus'),state.configValid?'Configuration valid. You can continue to the order dataset.':errors.join(' '),state.configValid?'ok':'error');
+      setStatus($('#configStatus'),state.configValid?'RFM configuration valid. Continue to Integration Key Setup.':errors.join(' '),state.configValid?'ok':'error');
       return state.configValid;
     }
     $('#validateSegments').addEventListener('click',validateConfig);
 
-    function parseDate(v){
-      const s=String(v||'').trim();
-      let d;
-      if(/^\d{4}-\d{1,2}-\d{1,2}$/.test(s)) d=new Date(s+'T12:00:00');
-      else if(/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(s)){const [dd,mm,yy]=s.split('/').map(Number);d=new Date(yy,mm-1,dd,12);}
-      else d=new Date(s);
-      return isNaN(d)?null:d;
-    }
-    function parseMoney(v){
-      let s=String(v??'').trim().replace(/\s/g,'').replace(/€/g,'');
-      if(s.includes(',') && s.includes('.')){
-        if(s.lastIndexOf(',')>s.lastIndexOf('.')) s=s.replace(/\./g,'').replace(',','.');
-        else s=s.replace(/,/g,'');
-      } else if(s.includes(',')) s=s.replace(',','.');
-      const n=Number(s);return Number.isFinite(n)?n:NaN;
-    }
-    function detectDelimiter(line){
-      const counts={',':(line.match(/,/g)||[]).length,';':(line.match(/;/g)||[]).length,'\t':(line.match(/\t/g)||[]).length};
-      return Object.entries(counts).sort((a,b)=>b[1]-a[1])[0][0];
-    }
+    function detectDelimiter(text){const line=(text.split(/\r?\n/).find(x=>x.trim())||'');const counts=[',',';','\t'].map(d=>[d,(line.match(new RegExp(d==='\t'?'\\t':'\\'+d,'g'))||[]).length]);counts.sort((a,b)=>b[1]-a[1]);return counts[0][1]?counts[0][0]:',';}
     function parseDelimited(text){
-      const clean=text.replace(/^\uFEFF/,'').trim();if(!clean) throw new Error('Paste or upload a table first.');
-      const lines=clean.split(/\r?\n/).filter(l=>l.trim()!=='');
-      const delim=detectDelimiter(lines[0]);
-      const parseLine=line=>{const out=[];let cur='',q=false;for(let i=0;i<line.length;i++){const ch=line[i];if(ch==='"'){if(q&&line[i+1]==='"'){cur+='"';i++;}else q=!q;}else if(ch===delim&&!q){out.push(cur.trim());cur='';}else cur+=ch;}out.push(cur.trim());return out;};
-      const headers=parseLine(lines[0]).map(h=>h.toLowerCase().trim());
-      const aliases={customer_id:['customer_id','cliente_id','customer','client_id'],order_id:['order_id','pedido_id','order'],order_date:['order_date','fecha_pedido','date'],order_revenue:['order_revenue','ingreso_pedido','revenue','amount','sales']};
-      const map={};for(const [canonical,names] of Object.entries(aliases)){const idx=headers.findIndex(h=>names.includes(h));if(idx<0) throw new Error(`Missing required column: ${canonical}.`);map[canonical]=idx;}
-      return lines.slice(1).map((line,i)=>{const p=parseLine(line);return {row:i+2,customer_id:p[map.customer_id]?.trim(),order_id:p[map.order_id]?.trim(),order_date:p[map.order_date]?.trim(),order_revenue:p[map.order_revenue]?.trim()};});
+      text=String(text||'').replace(/^\uFEFF/,''); if(!text.trim())return {headers:[],rows:[]};
+      const delim=detectDelimiter(text),rows=[];let row=[],field='',quoted=false;
+      for(let i=0;i<text.length;i++){
+        const ch=text[i];
+        if(quoted){if(ch==='"'&&text[i+1]==='"'){field+='"';i++;}else if(ch==='"'){quoted=false;}else field+=ch;}
+        else{if(ch==='"')quoted=true;else if(ch===delim){row.push(field);field='';}else if(ch==='\n'){row.push(field);rows.push(row);row=[];field='';}else if(ch!=='\r')field+=ch;}
+      }
+      row.push(field);if(row.some(v=>String(v).trim()!==''))rows.push(row);
+      if(!rows.length)return {headers:[],rows:[]};
+      const headers=rows.shift().map(h=>String(h).trim());
+      const objects=rows.filter(r=>r.some(v=>String(v).trim()!=='')).map(r=>Object.fromEntries(headers.map((h,i)=>[h,r[i]??''])));
+      return {headers,rows:objects};
     }
-    function validateAndConsolidate(){
-      if(!$('#privacyConfirm').checked){setStatus($('#dataStatus'),'Confirm that the dataset contains no personal data before validation.','error');state.dataValid=false;return false;}
-      try{
-        const rows=parseDelimited($('#csvText').value);if(!rows.length) throw new Error('The dataset has no data rows.');
-        const byOrder=new Map();let duplicateRows=0;
-        for(const r of rows){
-          if(!r.customer_id||!r.order_id) throw new Error(`Row ${r.row}: customer_id and order_id are required.`);
-          const d=parseDate(r.order_date);if(!d) throw new Error(`Row ${r.row}: invalid order_date.`);
-          const rev=parseMoney(r.order_revenue);if(!Number.isFinite(rev)||rev<0) throw new Error(`Row ${r.row}: order_revenue must be a non-negative number.`);
-          if(byOrder.has(r.order_id)){
-            const prev=byOrder.get(r.order_id);if(prev.customer_id!==r.customer_id) throw new Error(`Order ${r.order_id} is assigned to more than one customer.`);
-            prev.order_revenue+=rev;if(d>prev.order_date) prev.order_date=d;duplicateRows++;
-          } else byOrder.set(r.order_id,{customer_id:r.customer_id,order_id:r.order_id,order_date:d,order_revenue:rev});
-        }
-        state.orders=[...byOrder.values()].sort((a,b)=>a.order_date-b.order_date);state.dataValid=true;state.results=[];
-        const customers=new Set(state.orders.map(o=>o.customer_id)).size;
-        const extra=duplicateRows?` ${duplicateRows} repeated row(s) were consolidated by order ID.`:'';
-        setStatus($('#dataStatus'),`Valid dataset: ${state.orders.length} distinct orders across ${customers} anonymised customers.${extra}`,'ok');
-        return true;
-      }catch(err){state.dataValid=false;setStatus($('#dataStatus'),err.message,'error');return false;}
-    }
-    $('#validateData').addEventListener('click',validateAndConsolidate);
-    $('#csvFile').addEventListener('change',e=>{const f=e.target.files?.[0];if(!f)return;const reader=new FileReader();reader.onload=()=>{$('#csvText').value=reader.result;state.dataValid=false;setStatus($('#dataStatus'),'File loaded. Confirm privacy and validate the dataset.','warn');};reader.readAsText(f);});
+    function guessHeader(headers,candidates){const map=new Map(headers.map(h=>[norm(h),h]));for(const c of candidates){if(map.has(norm(c)))return map.get(norm(c));}return '';}
+    function fillSelect(id,headers,guess,optional=false){const el=$('#'+id),prev=el.value;el.innerHTML=(optional?'<option value="">Not available</option>':'<option value="">Select field</option>')+headers.map(h=>`<option value="${escapeHtml(h)}">${escapeHtml(h)}</option>`).join('');const wanted=headers.includes(prev)?prev:(headers.includes(guess)?guess:'');el.value=wanted;}
+    function refreshStats(exportRows='—'){const src=state.sourceRecords||'—',uniq=state.uniqueCustomers||'—';for(const id of ['sourceStats','exportStats']){const box=$('#'+id);if(!box)continue;box.innerHTML=`<div class="stat-box"><span>Source records</span><strong>${src}</strong></div><div class="stat-box"><span>Unique customers</span><strong>${uniq}</strong></div><div class="stat-box"><span>Export rows</span><strong>${exportRows}</strong></div>`;}}
 
-    function downloadText(filename,text,type='text/plain;charset=utf-8'){
-      const blob=new Blob([text],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    function inspectSource(show=true){
+      const parsed=parseDelimited($('#csvText').value);state.headers=parsed.headers;state.rawRows=parsed.rows;state.sourceRecords=parsed.rows.length;state.dataValid=false;state.integrationValid=false;state.uniqueCustomers=0;state.customers=[];state.results=[];state.spoRows=[];
+      if(!parsed.headers.length||!parsed.rows.length){if(show)setStatus($('#inspectStatus'),'No valid source table detected. Paste or upload a CSV with headers.','error');refreshStats();return false;}
+      const H=parsed.headers;
+      const g={
+        key:guessHeader(H,['customer_key','customer_id','cliente_id','crm_customer_id','loyalty_member_id','hashed_email_id','erp_customer_id']),
+        source:guessHeader(H,['source_customer_id','customer_id','cliente_id','customer_key']),
+        order:guessHeader(H,['order_id','pedido_id','transaction_id','purchase_id']),
+        date:guessHeader(H,['order_date','fecha_pedido','transaction_date','purchase_date','date']),
+        revenue:guessHeader(H,['order_revenue','ingreso_pedido','revenue','amount','monetary','sales_value']),
+        cr:guessHeader(H,['content_recency','marketing_recency']),cf:guessHeader(H,['content_frequency','marketing_frequency']),cv:guessHeader(H,['content_value','marketing_value']),cs:guessHeader(H,['content_rfm_score']),
+        pr:guessHeader(H,['post_sale_recency','postsale_recency','service_recency']),pf:guessHeader(H,['post_sale_frequency','postsale_frequency','service_frequency']),pi:guessHeader(H,['post_sale_economic_impact','postsale_economic_impact','service_economic_impact']),ps:guessHeader(H,['post_sale_rfm_score','postsale_rfm_score'])
+      };
+      fillSelect('mapCustomerKey',H,g.key,false);fillSelect('mapSourceCustomerId',H,g.source||g.key,false);fillSelect('mapOrderId',H,g.order,false);fillSelect('mapOrderDate',H,g.date,false);fillSelect('mapOrderRevenue',H,g.revenue,false);
+      fillSelect('mapContentRecency',H,g.cr,true);fillSelect('mapContentFrequency',H,g.cf,true);fillSelect('mapContentValue',H,g.cv,true);fillSelect('mapContentScore',H,g.cs,true);
+      fillSelect('mapPostRecency',H,g.pr,true);fillSelect('mapPostFrequency',H,g.pf,true);fillSelect('mapPostImpact',H,g.pi,true);fillSelect('mapPostScore',H,g.ps,true);
+      if(show)setStatus($('#inspectStatus'),`${H.length} fields detected across ${parsed.rows.length} source records. Confirm the stable integration key before validation.`,'ok');
+      refreshStats();return true;
     }
-    $('#downloadTemplate').addEventListener('click',()=>downloadText('DOC_ROI_Dynamic_RFM_Template_EN.csv','customer_id,order_id,order_date,order_revenue\nC001,O0001,2026-08-04,129.90\nC001,O0002,2026-09-02,74.50\nC002,O0003,2026-09-10,245.00\n','text/csv;charset=utf-8'));
+    $('#inspectData').addEventListener('click',()=>inspectSource(true));
+    $$('.map-select').forEach(el=>el.addEventListener('change',()=>{state.dataValid=false;state.integrationValid=false;setStatus($('#dataStatus'),'Field mapping changed. Validate the source again.','warn');}));
+    $('#datasetId').addEventListener('input',()=>{state.dataValid=false;state.integrationValid=false;});
+
+    $('#csvFile').addEventListener('change',e=>{const f=e.target.files&&e.target.files[0];if(!f)return;const reader=new FileReader();reader.onload=()=>{$('#csvText').value=String(reader.result||'');state.isDemo=false;$('#keyConfirm').checked=false;inspectSource(true);};reader.readAsText(f,'UTF-8');});
+
+    function mapping(){return {key:$('#mapCustomerKey').value,source:$('#mapSourceCustomerId').value,order:$('#mapOrderId').value,date:$('#mapOrderDate').value,revenue:$('#mapOrderRevenue').value,cr:$('#mapContentRecency').value,cf:$('#mapContentFrequency').value,cv:$('#mapContentValue').value,cs:$('#mapContentScore').value,pr:$('#mapPostRecency').value,pf:$('#mapPostFrequency').value,pi:$('#mapPostImpact').value,ps:$('#mapPostScore').value};}
+    function firstNumeric(rows,field){if(!field)return null;for(const r of rows){const n=parseNumber(r[field]);if(n!==null)return n;}return null;}
+
+    function validateSource(){
+      if(!state.rawRows.length && !inspectSource(false)){setStatus($('#dataStatus'),'Inspect a source table first.','error');return false;}
+      const m=mapping(),errors=[],dataset=$('#datasetId').value.trim();
+      if(!dataset)errors.push('dataset_id is required.');
+      if(!m.key)errors.push('Select the source field used as customer_key.');
+      if(!m.source)errors.push('Select the source_customer_id field.');
+      if(!m.order||!m.date||!m.revenue)errors.push('Transaction RFM requires Order ID, Order date and Order revenue mappings.');
+      if(!$('#keyConfirm').checked)errors.push('Confirm that customer_key is the stable cross-pill integration identifier.');
+      if(!$('#privacyConfirm').checked)errors.push('Confirm the privacy / protected identifier statement.');
+      if(errors.length){setStatus($('#dataStatus'),errors.join(' '),'error');return false;}
+
+      const byKey=new Map(),orderOwner=new Map();let partialTransactions=0,badDates=0,badRevenue=0,inconsistentSource=0,crossCustomerOrders=0;
+      for(const row of state.rawRows){
+        const key=String(row[m.key]??'').trim(),source=String(row[m.source]??'').trim();
+        if(!key){errors.push('At least one source record has a missing customer_key.');break;}
+        if(!source){errors.push(`Customer ${key} has a missing source_customer_id.`);break;}
+        if(!byKey.has(key))byKey.set(key,{key,sourceId:source,rows:[],orders:[]});
+        const c=byKey.get(key); if(c.sourceId!==source)inconsistentSource++; c.rows.push(row);
+        const oid=String(row[m.order]??'').trim(),dv=String(row[m.date]??'').trim(),rv=String(row[m.revenue]??'').trim();
+        const any=oid||dv||rv;
+        if(any){if(!(oid&&dv&&rv)){partialTransactions++;continue;}const d=dateOnly(dv),rev=parseNumber(rv);if(!d){badDates++;continue;}if(rev===null){badRevenue++;continue;}if(orderOwner.has(oid)&&orderOwner.get(oid)!==key){crossCustomerOrders++;continue;}orderOwner.set(oid,key);c.orders.push({order_id:oid,order_date:d,order_revenue:rev});}
+      }
+      if(inconsistentSource)errors.push(`${inconsistentSource} records use inconsistent source_customer_id values for the same customer_key.`);
+      if(partialTransactions)errors.push(`${partialTransactions} records contain incomplete transaction fields.`);
+      if(badDates)errors.push(`${badDates} records contain invalid transaction dates.`);
+      if(badRevenue)errors.push(`${badRevenue} records contain invalid transaction revenue.`);
+      if(crossCustomerOrders)errors.push(`${crossCustomerOrders} order IDs appear under more than one customer_key.`);
+      if(errors.length){state.dataValid=false;setStatus($('#dataStatus'),errors.join(' '),'error');refreshStats();return false;}
+
+      // Consolidate duplicate product lines / repeated order IDs inside the same customer.
+      for(const c of byKey.values()){
+        const om=new Map();
+        for(const o of c.orders){if(!om.has(o.order_id))om.set(o.order_id,{...o});else{const x=om.get(o.order_id);if(iso(x.order_date)!==iso(o.order_date)){errors.push(`Order ${o.order_id} has conflicting dates.`);break;}x.order_revenue+=o.order_revenue;}}
+        c.orders=[...om.values()];
+        c.content={recency:firstNumeric(c.rows,m.cr),frequency:firstNumeric(c.rows,m.cf),value:firstNumeric(c.rows,m.cv),score:firstNumeric(c.rows,m.cs)};
+        c.post={recency:firstNumeric(c.rows,m.pr),frequency:firstNumeric(c.rows,m.pf),impact:firstNumeric(c.rows,m.pi),score:firstNumeric(c.rows,m.ps)};
+      }
+      if(errors.length){state.dataValid=false;setStatus($('#dataStatus'),errors.join(' '),'error');return false;}
+      state.customers=[...byKey.values()];state.uniqueCustomers=state.customers.length;
+      if(!state.uniqueCustomers){setStatus($('#dataStatus'),'No unique customers were found.','error');return false;}
+      state.dataValid=true;state.integrationValid=false;state.results=[];state.spoRows=[];
+      const consolidated=state.customers.reduce((a,c)=>a+c.orders.length,0);
+      setStatus($('#dataStatus'),`Source validated. ${state.sourceRecords} records → ${state.uniqueCustomers} unique customers → ${consolidated} consolidated orders. Customer cardinality is locked for the SPO-ready export.`,'ok');
+      refreshStats('—');return true;
+    }
+    $('#validateData').addEventListener('click',validateSource);
+
+    function csvEscape(v){const s=String(v??'');return /[",\n\r]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s;}
+    function downloadText(filename,text,type='text/plain;charset=utf-8'){const payload=type.includes('csv')?'\uFEFF'+text:text;const blob=new Blob([payload],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+    $('#downloadTemplate').addEventListener('click',()=>{const t='customer_key,source_customer_id,order_id,order_date,order_revenue,content_recency,content_frequency,content_value,content_rfm_score,post_sale_recency,post_sale_frequency,post_sale_economic_impact,post_sale_rfm_score\nC001,C001,O0001,2027-12-04,129.90,8,5,42,,12,2,75,\n';downloadText('DOC_ROI_Dynamic_RFM_Input_Template_EN.csv',t,'text/csv;charset=utf-8');});
 
     function seeded(seed){return()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};}
+    function addDays(d,days){const x=new Date(d);x.setDate(x.getDate()+days);return x;}
+    function targetForBand(band,rnd){const profiles={1:{freq:1,total:90,rec:72},2:{freq:2,total:220,rec:52},3:{freq:4,total:430,rec:38},4:{freq:7,total:720,rec:22},5:{freq:10,total:1250,rec:8}};const p={...profiles[band]};p.total*=0.90+rnd()*0.20;p.rec=Math.max(0,Math.round(p.rec+(rnd()-.5)*6));return p;}
+    function makePeriodOrders(key,prefix,band,start,end,rnd){const p=targetForBand(band,rnd),days=Math.round((end-start)/86400000)+1,span=Math.max(0,days-p.rec-2),rows=[];for(let j=0;j<p.freq;j++){const offset=p.rec+(p.freq===1?0:Math.round(j*span/(p.freq-1)));const d=addDays(end,-offset);const amount=(p.total/p.freq)*(0.86+rnd()*.28);rows.push({order_id:`${prefix}-${String(j+1).padStart(2,'0')}`,date:iso(d),revenue:amount});}const total=rows.reduce((a,x)=>a+x.revenue,0),scale=p.total/total;rows.forEach(x=>x.revenue*=scale);return rows;}
     function makeExample(){
-      const c=configSnapshot();const end=c.analysisDate;const days=c.periodDays;const p2Start=new Date(end);p2Start.setDate(end.getDate()-days+1);const p1End=new Date(p2Start);p1End.setDate(p2Start.getDate()-1);const p1Start=new Date(p1End);p1Start.setDate(p1End.getDate()-days+1);
-      const rnd=seeded(27062026);const rows=['customer_id,order_id,order_date,order_revenue'];let orderNo=1;
-      for(let i=1;i<=168;i++){
-        const id='C'+String(i).padStart(3,'0');const base=Math.floor(rnd()*7);const trend=rnd();let f1=clamp(base+Math.floor(rnd()*4),0,12);let f2=f1+(trend<.32?-Math.ceil(rnd()*4):trend>.68?Math.ceil(rnd()*4):Math.round(rnd()*2-1));f2=clamp(f2,0,13);
-        const valueBase=35+rnd()*260;
-        const addOrders=(count,start,span,mult)=>{for(let j=0;j<count;j++){const d=new Date(start);d.setDate(start.getDate()+Math.floor(rnd()*span));const rev=(valueBase*(.55+rnd()*1.25)*mult).toFixed(2);rows.push(`${id},O${String(orderNo++).padStart(5,'0')},${iso(d)},${rev}`);}};
-        addOrders(f1,p1Start,days,0.95);addOrders(f2,p2Start,days,trend>.68?1.12:trend<.32?.86:1.0);
+      const rnd=seeded(20270927);$('#analysisDate').value='2027-12-31';$('#periodDays').value='90';$('#datasetId').value='DON_ESPADIN_DEMO_2027';$('#privacyConfirm').checked=true;$('#keyConfirm').checked=true;state.isDemo=true;validateConfig();
+      const end=new Date('2027-12-31T12:00:00'),p2Start=addDays(end,-89),p1End=addDays(p2Start,-1),p1Start=addDays(p1End,-89);
+      const head=['customer_key','source_customer_id','order_id','order_date','order_revenue','content_recency','content_frequency','content_value','post_sale_recency','post_sale_frequency','post_sale_economic_impact'];const rows=[];
+      for(let i=1;i<=266;i++){
+        const key=`DE-${String(i).padStart(4,'0')}`;const mode=i%6;let p1Band,p2Band;
+        if(mode===0||mode===1){p1Band=1+((i*7)%4);p2Band=p1Band+1;}else if(mode===2||mode===3){p1Band=1+((i*7)%5);p2Band=p1Band;}else{p1Band=2+((i*7)%4);p2Band=p1Band-1;}
+        const p1=makePeriodOrders(key,`${key}-P1`,p1Band,p1Start,p1End,rnd),p2=makePeriodOrders(key,`${key}-P2`,p2Band,p2Start,end,rnd);
+        const contentAvail=i%9!==0,postAvail=i%5!==0;
+        const contentRec=contentAvail?Math.max(0,Math.round((6-p2Band)*8+rnd()*10)):'';const contentFreq=contentAvail?Math.max(1,Math.round(p2Band*3+rnd()*5)):'';const contentValue=contentAvail?Math.round((p2Band*24+rnd()*30)*100)/100:'';
+        const postRec=postAvail?Math.max(0,Math.round((6-p2Band)*10+rnd()*16)):'';const postFreq=postAvail?Math.max(1,Math.round(1+rnd()*p2Band*2)):'';const postImpact=postAvail?Math.round((30+p2Band*35+rnd()*80)*100)/100:'';
+        for(const o of [...p1,...p2])rows.push([key,key,o.order_id,o.date,o.revenue.toFixed(2),contentRec,contentFreq,contentValue,postRec,postFreq,postImpact]);
       }
-      return rows.join('\n');
+      $('#csvText').value=[head,...rows].map(r=>r.map(csvEscape).join(',')).join('\n');inspectSource(true);$('#keyConfirm').checked=true;$('#privacyConfirm').checked=true;validateSource();calculate(true);setStatus($('#inspectStatus'),'Don Espadín demo loaded: exactly 266 fictional customers (DE-0001 to DE-0266). The source contains transaction events plus optional Content and Post-sale behavioural fields.','ok');
     }
-    $('#loadExample').addEventListener('click',()=>{$('#csvText').value=makeExample();$('#privacyConfirm').checked=true;state.dataValid=false;setStatus($('#dataStatus'),'Example loaded. Validate and consolidate the dataset.','warn');});
+    $('#loadExample').addEventListener('click',makeExample);
 
-    function factorScore(value,metric,factors){
-      const lo=metric==='r'?'rMin':metric==='f'?'fMin':'mMin';const hi=metric==='r'?'rMax':metric==='f'?'fMax':'mMax';
-      const row=factors.find(x=>value>=x[lo]&&value<=x[hi]);return row?row.factor:(metric==='r'?(value<Math.min(...factors.map(x=>x[lo]))?5:1):(value>Math.max(...factors.map(x=>x[hi]))?5:1));
-    }
-    function segmentFor(score,segments){return segments.find(s=>score>=s.min-1e-9&&score<=s.max+1e-9)||segments[segments.length-1];}
-    function aggregateCustomer(orders,start,end,periodEnd){
-      const inside=orders.filter(o=>o.order_date>=start&&o.order_date<=end);if(!inside.length) return {active:false,recency:99999,frequency:0,monetary:0,last:null};
-      const last=new Date(Math.max(...inside.map(o=>o.order_date.getTime())));return {active:true,recency:Math.max(0,Math.floor((periodEnd-last)/86400000)),frequency:inside.length,monetary:inside.reduce((s,o)=>s+o.order_revenue,0),last};
-    }
-    function calculate(){
-      if(!state.configValid && !validateConfig()){setStatus($('#calcStatus'),'Fix the model configuration first.','error');return;}
-      if(!state.dataValid && !validateAndConsolidate()){setStatus($('#calcStatus'),'Validate the order dataset first.','error');return;}
-      const c=configSnapshot();const end=c.analysisDate;const p2Start=new Date(end);p2Start.setDate(end.getDate()-c.periodDays+1);p2Start.setHours(0,0,0,0);const p1End=new Date(p2Start);p1End.setDate(p2Start.getDate()-1);p1End.setHours(23,59,59,999);const p1Start=new Date(p1End);p1Start.setDate(p1End.getDate()-c.periodDays+1);p1Start.setHours(0,0,0,0);
-      const relevant=state.orders.filter(o=>o.order_date>=p1Start&&o.order_date<=end);if(!relevant.length){setStatus($('#calcStatus'),`No orders fall inside P1 (${iso(p1Start)} to ${iso(p1End)}) or P2 (${iso(p2Start)} to ${iso(end)}).`,'error');return;}
-      const byCustomer=new Map();for(const o of relevant){if(!byCustomer.has(o.customer_id))byCustomer.set(o.customer_id,[]);byCustomer.get(o.customer_id).push(o);}
-      const wTotal=c.weights.r+c.weights.f+c.weights.m;const wr=c.weights.r/wTotal,wf=c.weights.f/wTotal,wm=c.weights.m/wTotal;
-      const res=[];
-      for(const [customer,orders] of byCustomer){
-        const p1=aggregateCustomer(orders,p1Start,p1End,p1End);const p2=aggregateCustomer(orders,p2Start,end,end);
-        for(const p of [p1,p2]){p.r=p.active?factorScore(p.recency,'r',c.factors):1;p.f=factorScore(p.frequency,'f',c.factors);p.m=factorScore(p.monetary,'m',c.factors);p.score=p.r*wr+p.f*wf+p.m*wm;p.segment=segmentFor(p.score,c.segments);p.code=`${p.r}${p.f}${p.m}`;}
-        const movement=p2.segment.level>p1.segment.level?'Up':p2.segment.level<p1.segment.level?'Deterioration':'Stable';const treatment=c.treatments[movement];
-        res.push({customer,p1,p2,movement,treatment,last:p2.last||p1.last,cost:0});
+    function factorScore(value,metric,factors){for(const r of factors){if(metric==='r'&&value>=r.rMin&&value<=r.rMax)return r.factor;if(metric==='f'&&value>=r.fMin&&value<=r.fMax)return r.factor;if(metric==='m'&&value>=r.mMin&&value<=r.mMax)return r.factor;}return 1;}
+    function periodAggregate(orders,start,end,asOf,factors,weights){const inside=orders.filter(o=>o.order_date>=start&&o.order_date<=end);const prior=orders.filter(o=>o.order_date<=asOf).sort((a,b)=>b.order_date-a.order_date);const recency=prior.length?Math.max(0,Math.floor((asOf-prior[0].order_date)/86400000)):99999;const frequency=inside.length;const monetary=inside.reduce((a,o)=>a+o.order_revenue,0);const r=factorScore(recency,'r',factors),f=factorScore(frequency,'f',factors),m=factorScore(monetary,'m',factors);const wt=weights.r+weights.f+weights.m,score=wt?(r*weights.r+f*weights.f+m*weights.m)/wt:1;const band=clamp(Math.round(score),1,5);return {recency,frequency,monetary,r,f,m,score,band,active:inside.length>0};}
+    function relativeFactor(value,values,higherBetter=true){if(value===null||!values.length)return null;if(values.length===1)return 3;let better=0;for(const v of values){if(higherBetter?(v<value):(v>value))better++;}const pct=better/(values.length-1);return clamp(1+Math.floor(Math.min(.999999,pct)*5),1,5);}
+    function validSourceScore(v){return Number.isFinite(v)&&v>=1&&v<=5?v:null;}
+
+    function calculate(fromDemo=false){
+      if(!state.configValid&&!validateConfig()){setStatus($('#calcStatus'),'Fix the RFM configuration first.','error');return;}
+      if(!state.dataValid&&!validateSource()){setStatus($('#calcStatus'),'Validate the source and integration key first.','error');return;}
+      const c=configSnapshot(),end=c.analysisDate,p2Start=addDays(new Date(end),-(c.periodDays-1));p2Start.setHours(0,0,0,0);const p1End=addDays(p2Start,-1);p1End.setHours(23,59,59,999);const p1Start=addDays(p1End,-(c.periodDays-1));p1Start.setHours(0,0,0,0);
+      const work=state.customers.map(cust=>{const p1=periodAggregate(cust.orders,p1Start,p1End,p1End,c.factors,c.weights),p2=periodAggregate(cust.orders,p2Start,end,end,c.factors,c.weights);const movement=p2.band>p1.band?'Growing':p2.band<p1.band?'Declining':'Stable';return {cust,p1,p2,movement};});
+
+      const contentAvail=work.filter(x=>x.cust.content.recency!==null&&x.cust.content.frequency!==null&&x.cust.content.value!==null);const cr=contentAvail.map(x=>x.cust.content.recency),cf=contentAvail.map(x=>x.cust.content.frequency),cv=contentAvail.map(x=>x.cust.content.value);
+      const postAvail=work.filter(x=>x.cust.post.recency!==null&&x.cust.post.frequency!==null&&x.cust.post.impact!==null);const pr=postAvail.map(x=>x.cust.post.recency),pf=postAvail.map(x=>x.cust.post.frequency),pi=postAvail.map(x=>x.cust.post.impact);
+
+      for(const x of work){
+        const cs=validSourceScore(x.cust.content.score);if(cs!==null)x.contentScore=cs;else if(x.cust.content.recency!==null&&x.cust.content.frequency!==null&&x.cust.content.value!==null)x.contentScore=mean([relativeFactor(x.cust.content.recency,cr,false),relativeFactor(x.cust.content.frequency,cf,true),relativeFactor(x.cust.content.value,cv,true)]);else x.contentScore=null;
+        const ps=validSourceScore(x.cust.post.score);if(ps!==null)x.postScore=ps;else if(x.cust.post.recency!==null&&x.cust.post.frequency!==null&&x.cust.post.impact!==null)x.postScore=mean([relativeFactor(x.cust.post.recency,pr,false),relativeFactor(x.cust.post.frequency,pf,true),relativeFactor(x.cust.post.impact,pi,true)]);else x.postScore=null;
+        const scores=[x.p2.score];if(x.contentScore!==null)scores.push(x.contentScore);if(x.postScore!==null)scores.push(x.postScore);const adj=x.movement==='Growing'?.25:x.movement==='Declining'?-.25:0;x.cognitiveScore=clamp(Math.round(mean(scores)+adj),1,5);x.cognitiveCategory=`${x.cognitiveScore}-star`;
       }
-      const p2ArpuBySegment={};for(const s of c.segments){const act=res.filter(r=>r.p2.segment.level===s.level&&r.p2.active);p2ArpuBySegment[s.level]=act.length?act.reduce((a,r)=>a+r.p2.monetary,0)/act.length:0;}
-      for(const r of res) r.cost=p2ArpuBySegment[r.p2.segment.level]*(r.treatment.pct/100);
-      state.results=res.sort((a,b)=>b.p2.score-a.p2.score||a.customer.localeCompare(b.customer));
-      renderOutputs(c,{p1Start,p1End,p2Start,end});
-      setStatus($('#calcStatus'),`Dynamic RFM calculated for ${res.length} customers. P1: ${iso(p1Start)}–${iso(p1End)} · P2: ${iso(p2Start)}–${iso(end)}.`,'ok');
-      showStep('out1');
+      const arpuBy={};for(let score=1;score<=5;score++){const rows=work.filter(x=>x.cognitiveScore===score);arpuBy[score]=rows.length?rows.reduce((a,x)=>a+x.p2.monetary,0)/rows.length:0;}
+      const dataset=$('#datasetId').value.trim();
+      state.results=work.sort((a,b)=>b.cognitiveScore-a.cognitiveScore||b.p2.score-a.p2.score||a.cust.key.localeCompare(b.cust.key));
+      state.spoRows=state.results.map(x=>{const treatment=c.treatments[x.movement],arpu=arpuBy[x.cognitiveScore]||0,cost=arpu*((treatment?.pct||0)/100);const transactionAvailable=x.cust.orders.length>0;return {
+        schema_version:'DOCROI_SPO_1.0',dataset_id:dataset,customer_key:x.cust.key,source_customer_id:x.cust.sourceId,
+        period_p1:iso(p1End),period_p2:iso(end),
+        content_rfm_available:x.contentScore!==null,content_recency:x.contentScore!==null?x.cust.content.recency:'',content_frequency:x.contentScore!==null?x.cust.content.frequency:'',content_value:x.contentScore!==null?x.cust.content.value:'',content_rfm_score:x.contentScore!==null?Number(x.contentScore.toFixed(2)):'',
+        transaction_rfm_available:transactionAvailable,transaction_recency:transactionAvailable?x.p2.recency:'',transaction_frequency:transactionAvailable?x.p2.frequency:'',transaction_monetary:transactionAvailable?Number(x.p2.monetary.toFixed(2)):'',transaction_rfm_score:transactionAvailable?Number(x.p2.score.toFixed(2)):'',
+        post_sale_rfm_available:x.postScore!==null,post_sale_recency:x.postScore!==null?x.cust.post.recency:'',post_sale_frequency:x.postScore!==null?x.cust.post.frequency:'',post_sale_economic_impact:x.postScore!==null?x.cust.post.impact:'',post_sale_rfm_score:x.postScore!==null?Number(x.postScore.toFixed(2)):'',
+        cognitive_score:x.cognitiveScore,cognitive_category:x.cognitiveCategory,cognitive_movement:x.movement,segment_p1:`RFM-${x.p1.band}`,segment_p2:`RFM-${x.p2.band}`,
+        recommended_action:treatment?.action||'',recommended_channel:treatment?.channel||'',estimated_cost:Number(cost.toFixed(2)),arpu:Number(arpu.toFixed(2))
+      };});
+      state.integrationValid=false;renderOutputs(c,{p1Start,p1End,p2Start,end});setStatus($('#calcStatus'),`Dynamic RFM calculated for ${state.uniqueCustomers} unique customers. Export rows generated: ${state.spoRows.length}.`,'ok');refreshStats(state.spoRows.length);$('#validateIntegration').disabled=false;if(fromDemo){validateIntegration();showStep('out1');}else showStep('out1');
     }
-    $('#calculateRfm').addEventListener('click',calculate);
+    $('#calculateRfm').addEventListener('click',()=>calculate(false));
 
     function renderOutputs(c,periods){
-      const r=state.results;const segs=[...c.segments].sort((a,b)=>b.level-a.level);const total=r.length;const active1=r.filter(x=>x.p1.active).length;const active2=r.filter(x=>x.p2.active).length;const rev1=r.reduce((a,x)=>a+x.p1.monetary,0);const rev2=r.reduce((a,x)=>a+x.p2.monetary,0);const down=r.filter(x=>x.movement==='Deterioration').length;const up=r.filter(x=>x.movement==='Up').length;const stable=r.filter(x=>x.movement==='Stable').length;const downRate=total?down/total*100:0;
+      const r=state.results,total=r.length,growing=r.filter(x=>x.movement==='Growing').length,stable=r.filter(x=>x.movement==='Stable').length,declining=r.filter(x=>x.movement==='Declining').length,rev1=r.reduce((a,x)=>a+x.p1.monetary,0),rev2=r.reduce((a,x)=>a+x.p2.monetary,0);
       $('#dashboardPlaceholder').hidden=true;$('#dashboardContent').hidden=false;
-      $('#kpis').innerHTML=`<div class="kpi"><span>Customers analysed</span><strong>${total}</strong><small>${active2} active in P2</small></div><div class="kpi"><span>P2 revenue</span><strong>${fmtMoney.format(rev2)}</strong><small>${rev1?fmtNum.format((rev2/rev1-1)*100):'—'}% vs P1</small></div><div class="kpi"><span>Deterioration</span><strong>${fmtNum.format(downRate)}%</strong><small>Target ≤ ${fmtNum.format(c.churnTolerance)}%</small></div><div class="kpi"><span>Movement balance</span><strong>${up} ↑ / ${down} ↓</strong><small>${stable} stable</small></div>`;
-      const dist=segs.map(s=>{const n1=r.filter(x=>x.p1.segment.level===s.level).length;const n2=r.filter(x=>x.p2.segment.level===s.level).length;return {s,n1,n2};});
-      $('#distributionChart').innerHTML=dist.map(d=>`<div class="bar-row"><strong>${escapeHtml(d.s.name)}</strong><div class="bar-track" title="P1 ${d.n1}, P2 ${d.n2}"><div class="bar-p1" style="width:${total?d.n1/total*100:0}%"></div><div class="bar-p2" style="width:${total?d.n2/total*100:0}%"></div></div><span>${d.n2} · ${total?Math.round(d.n2/total*100):0}%</span></div>`).join('');
-      let m='<table><thead><tr><th>P1 → P2</th>'+segs.map(s=>`<th>${escapeHtml(s.name)}</th>`).join('')+'</tr></thead><tbody>';for(const from of segs){m+=`<tr><th>${escapeHtml(from.name)}</th>`;for(const to of segs){m+=`<td class="cell">${r.filter(x=>x.p1.segment.level===from.level&&x.p2.segment.level===to.level).length}</td>`;}m+='</tr>';}m+='</tbody></table>';$('#migrationMatrix').innerHTML=m;
-      let ar='<table><thead><tr><th>Segment</th><th>Active customers</th><th>P2 revenue</th><th>ARPU</th></tr></thead><tbody>';for(const s of segs){const rows=r.filter(x=>x.p2.segment.level===s.level&&x.p2.active);const revenue=rows.reduce((a,x)=>a+x.p2.monetary,0);ar+=`<tr><td><strong>${escapeHtml(s.name)}</strong></td><td>${rows.length}</td><td>${fmtMoney.format(revenue)}</td><td>${fmtMoney.format(rows.length?revenue/rows.length:0)}</td></tr>`;}ar+='</tbody></table>';$('#arpuTable').innerHTML=ar;
-      let rf='<table><thead><tr><th>F \ R</th>'+[5,4,3,2,1].map(x=>`<th>R${x}</th>`).join('')+'</tr></thead><tbody>';for(const f of [5,4,3,2,1]){rf+=`<tr><th>F${f}</th>`;for(const rs of [5,4,3,2,1])rf+=`<td class="cell">${r.filter(x=>x.p2.f===f&&x.p2.r===rs).length}</td>`;rf+='</tr>';}rf+='</tbody></table>';$('#rfMatrix').innerHTML=rf;
+      $('#kpis').innerHTML=`<div class="kpi"><span>Unique customers</span><strong>${total}</strong><small>${state.spoRows.length} SPO-ready rows</small></div><div class="kpi"><span>P2 transaction revenue</span><strong>${fmtMoney.format(rev2)}</strong><small>${rev1?fmtNum.format((rev2/rev1-1)*100):'—'}% vs P1</small></div><div class="kpi"><span>Growing / Stable / Declining</span><strong>${growing} / ${stable} / ${declining}</strong><small>Exact machine-readable movement terms</small></div><div class="kpi"><span>Cardinality check</span><strong>${total===state.spoRows.length?'MATCH':'ERROR'}</strong><small>Unique customers = export rows</small></div>`;
+      const cat=[5,4,3,2,1].map(score=>({score,n:r.filter(x=>x.cognitiveScore===score).length}));$('#distributionChart').innerHTML=cat.map(d=>`<div class="bar-row"><strong>${d.score}-star</strong><div class="bar-track"><div class="bar-p2" style="width:${total?d.n/total*100:0}%"></div></div><span>${d.n} · ${total?Math.round(d.n/total*100):0}%</span></div>`).join('');
+      let mm='<table><thead><tr><th>P1 → P2</th>'+[1,2,3,4,5].map(b=>`<th>RFM-${b}</th>`).join('')+'</tr></thead><tbody>';for(const from of [1,2,3,4,5]){mm+=`<tr><th>RFM-${from}</th>`;for(const to of [1,2,3,4,5])mm+=`<td class="cell">${r.filter(x=>x.p1.band===from&&x.p2.band===to).length}</td>`;mm+='</tr>';}mm+='</tbody></table>';$('#migrationMatrix').innerHTML=mm;
+      let ar='<table><thead><tr><th>Cognitive category</th><th>Customers</th><th>P2 revenue</th><th>ARPU</th></tr></thead><tbody>';for(const score of [5,4,3,2,1]){const rows=r.filter(x=>x.cognitiveScore===score),revenue=rows.reduce((a,x)=>a+x.p2.monetary,0),arpu=rows.length?revenue/rows.length:0;ar+=`<tr><td><strong>${score}-star</strong></td><td>${rows.length}</td><td>${fmtMoney.format(revenue)}</td><td>${fmtMoney.format(arpu)}</td></tr>`;}ar+='</tbody></table>';$('#arpuTable').innerHTML=ar;
+      const tx=r.filter(x=>x.cust.orders.length>0).length,co=r.filter(x=>x.contentScore!==null).length,po=r.filter(x=>x.postScore!==null).length;$('#layerAvailability').innerHTML=`<table><thead><tr><th>Behavioural layer</th><th>Customers available</th><th>Coverage</th></tr></thead><tbody><tr><td>Transaction RFM</td><td>${tx}</td><td>${fmtNum.format(tx/total*100)}%</td></tr><tr><td>Content / Marketing RFM</td><td>${co}</td><td>${fmtNum.format(co/total*100)}%</td></tr><tr><td>Post-sale / Relationship RFM</td><td>${po}</td><td>${fmtNum.format(po/total*100)}%</td></tr></tbody></table>`;
 
-      $('#detailPlaceholder').hidden=true;$('#detailTableWrap').hidden=false;$('#downloadFullCsv').disabled=false;
-      let dt='<table><thead><tr><th>Customer</th><th>Latest order</th><th>RFM P1</th><th>RFM P2</th><th>Segment P1</th><th>Segment P2</th><th>Movement</th><th>Category</th><th>Action</th><th>Channel</th><th>Est. cost</th></tr></thead><tbody>';
-      dt+=r.map(x=>`<tr><td><strong>${escapeHtml(x.customer)}</strong></td><td>${x.last?iso(x.last):'—'}</td><td>${x.p1.code}</td><td>${x.p2.code}</td><td>${escapeHtml(x.p1.segment.name)}</td><td>${escapeHtml(x.p2.segment.name)}</td><td><span class="badge ${x.movement==='Up'?'up':x.movement==='Deterioration'?'down':'stable'}">${x.movement}</span></td><td>${escapeHtml(x.treatment.category)}</td><td>${escapeHtml(x.treatment.action)}</td><td>${escapeHtml(x.treatment.channel)}</td><td>${fmtMoney.format(x.cost)}</td></tr>`).join('');dt+='</tbody></table>';$('#detailTableWrap').innerHTML=dt;
-
-      const revenueBySeg=segs.map(s=>({s,v:r.filter(x=>x.p2.segment.level===s.level).reduce((a,x)=>a+x.p2.monetary,0)})).sort((a,b)=>b.v-a.v);const topSeg=revenueBySeg[0];
-      const toleranceText=downRate<=c.churnTolerance?`within the stated tolerance of ${fmtNum.format(c.churnTolerance)}%`:`above the stated tolerance of ${fmtNum.format(c.churnTolerance)}%`;
-      $('#summaryPlaceholder').hidden=true;$('#summaryContent').hidden=false;
-      $('#sumDiagnosis').textContent=`The analysis covers ${total} customers across two ${c.periodDays}-day periods. Active customers changed from ${active1} in P1 to ${active2} in P2, while period revenue changed from ${fmtMoney.format(rev1)} to ${fmtMoney.format(rev2)}.`;
-      $('#sumSegments').textContent=`${topSeg?.s.name||'—'} is the P2 segment contributing the highest revenue (${fmtMoney.format(topSeg?.v||0)}). The dashboard should be read together with the migration matrix to distinguish current value from trajectory.`;
-      $('#sumChurn').textContent=`${down} customers (${fmtNum.format(downRate)}%) moved to a weaker segment. This is ${toleranceText}. ${up} customers moved upward and ${stable} remained at the same segment level.`;
-      const costs=r.reduce((a,x)=>a+x.cost,0);$('#sumActions').textContent=`The configured marketing lens assigns treatments by trajectory. Applying the current classroom investment rules produces an indicative treatment budget of ${fmtMoney.format(costs)}. This is a planning estimate, not a forecast of return.`;
-      state.summaryText=[
-        'DOC ROI · DYNAMIC RFM · EXECUTIVE SUMMARY','',
-        `Analysis: ${iso(periods.p1Start)} to ${iso(periods.end)}`,
-        `P1: ${iso(periods.p1Start)} to ${iso(periods.p1End)}`,
-        `P2: ${iso(periods.p2Start)} to ${iso(periods.end)}`,'',
-        'PORTFOLIO DIAGNOSIS', $('#sumDiagnosis').textContent,'',
-        'SEGMENTS AND VALUE', $('#sumSegments').textContent,'',
-        'DETERIORATION AND TOLERANCE', $('#sumChurn').textContent,'',
-        'PRIORITY ACTIONS', $('#sumActions').textContent,'',
-        'Closing principle: Classic RFM sorted customers. Scoring made them comparable. Dynamic RFM interprets their movement. Automation turns that interpretation into relationship.'
-      ].join('\n');
+      $('#detailPlaceholder').hidden=true;$('#detailTableWrap').hidden=false;const preview=state.spoRows.slice(0,100);let dt='<table><thead><tr><th>customer_key</th><th>cognitive_score</th><th>cognitive_category</th><th>cognitive_movement</th><th>segment_p1</th><th>segment_p2</th><th>transaction_rfm_score</th><th>content_rfm_score</th><th>post_sale_rfm_score</th><th>estimated_cost</th><th>arpu</th></tr></thead><tbody>';dt+=preview.map(x=>`<tr><td><strong>${escapeHtml(x.customer_key)}</strong></td><td>${x.cognitive_score}</td><td>${x.cognitive_category}</td><td><span class="badge ${x.cognitive_movement==='Growing'?'up':x.cognitive_movement==='Declining'?'down':'stable'}">${x.cognitive_movement}</span></td><td>${x.segment_p1}</td><td>${x.segment_p2}</td><td>${x.transaction_rfm_score}</td><td>${x.content_rfm_score}</td><td>${x.post_sale_rfm_score}</td><td>${Number(x.estimated_cost).toFixed(2)}</td><td>${Number(x.arpu).toFixed(2)}</td></tr>`).join('');dt+='</tbody></table>';$('#detailTableWrap').innerHTML=dt;$('#previewNote').hidden=false;$('#previewNote').textContent=`Preview shows ${preview.length} of ${state.spoRows.length} customer rows. The downloaded CSV contains the complete population and all 30 contract columns.`;
+      $('#summaryPlaceholder').hidden=true;$('#summaryContent').hidden=false;const top=[5,4,3,2,1].map(score=>({score,n:r.filter(x=>x.cognitiveScore===score).length})).sort((a,b)=>b.n-a.n)[0];$('#sumDiagnosis').textContent=`The source contains ${state.sourceRecords} records and ${state.uniqueCustomers} unique customers. Dynamic RFM generated ${state.spoRows.length} customer-level SPO-ready rows across P1 (${iso(periods.p1Start)} to ${iso(periods.p1End)}) and P2 (${iso(periods.p2Start)} to ${iso(periods.end)}).`;$('#sumSegments').textContent=`The largest current Cognitive Category is ${top.score}-star with ${top.n} customers. This category is a behavioural interpretation and must not be confused with the final SPO or a fixed loyalty segment.`;$('#sumChurn').textContent=`Movement is ${growing} Growing, ${stable} Stable and ${declining} Declining. The Declining share is ${fmtNum.format(declining/total*100)}% against the diagnostic reference of ${fmtNum.format(c.churnTolerance)}%.`;$('#sumActions').textContent=`The cardinality rule currently reads ${state.uniqueCustomers} unique customers = ${state.spoRows.length} export rows. Run Integration Validation before download; once passed, the file is ready to merge by customer_key with DOC ROI NPS and ABCD Product Intelligence.`;
+      state.summaryText=['DOC ROI · DYNAMIC RFM · EXECUTIVE & INTEGRATION SUMMARY','',`Dataset: ${$('#datasetId').value.trim()}`,`Schema: DOCROI_SPO_1.0`,`Source records: ${state.sourceRecords}`,`Unique customers: ${state.uniqueCustomers}`,`SPO-ready export rows: ${state.spoRows.length}`,'',`P1 end: ${iso(periods.p1End)}`,`P2 end: ${iso(periods.end)}`,'','PORTFOLIO DIAGNOSIS',$('#sumDiagnosis').textContent,'','COGNITIVE DISTRIBUTION',$('#sumSegments').textContent,'','MOVEMENT',$('#sumChurn').textContent,'','INTEROPERABILITY',$('#sumActions').textContent,'','Boundary: this tool does not calculate the final SPO or preselect final loyalty segments.'].join('\n');
+      refreshStats(state.spoRows.length);
     }
 
-    function csvEscape(v){const s=String(v??'');return /[",\n]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s;}
-    $('#downloadFullCsv').addEventListener('click',()=>{
-      if(!state.results.length)return;const head=['customer_id','latest_order','rfm_p1','rfm_p2','segment_p1','segment_p2','movement','category','action','channel','estimated_cost'];const rows=state.results.map(x=>[x.customer,x.last?iso(x.last):'',x.p1.code,x.p2.code,x.p1.segment.name,x.p2.segment.name,x.movement,x.treatment.category,x.treatment.action,x.treatment.channel,x.cost.toFixed(2)]);downloadText('DOC_ROI_Dynamic_RFM_Operational_Output_EN.csv',[head,...rows].map(r=>r.map(csvEscape).join(',')).join('\n'),'text/csv;charset=utf-8');
-    });
-    $('#printSummary').addEventListener('click',()=>window.print());
-    $('#downloadTxt').addEventListener('click',()=>state.summaryText&&downloadText('DOC_ROI_Dynamic_RFM_Executive_Summary_EN.txt',state.summaryText));
+    function validateIntegration(){
+      const errors=[],rows=state.spoRows,keys=new Set();
+      if(!rows.length)errors.push('No SPO-ready rows have been generated.');
+      if(rows.length!==state.uniqueCustomers)errors.push(`Unique customers (${state.uniqueCustomers}) do not match export rows (${rows.length}).`);
+      for(const x of rows){
+        if(!x.customer_key)errors.push('Missing customer_key detected.');else if(keys.has(x.customer_key))errors.push(`Duplicated customer_key: ${x.customer_key}`);else keys.add(x.customer_key);
+        if(!Number.isInteger(x.cognitive_score)||x.cognitive_score<1||x.cognitive_score>5)errors.push(`Invalid cognitive_score for ${x.customer_key}.`);
+        if(!MOVEMENTS.includes(x.cognitive_movement))errors.push(`Invalid cognitive_movement for ${x.customer_key}.`);
+        if(!/^\d{4}-\d{2}-\d{2}$/.test(x.period_p1)||!/^\d{4}-\d{2}-\d{2}$/.test(x.period_p2))errors.push(`Invalid ISO period date for ${x.customer_key}.`);
+        if(!Number.isFinite(Number(x.estimated_cost))||String(x.estimated_cost).includes('€'))errors.push(`Invalid estimated_cost for ${x.customer_key}.`);
+        if(!Number.isFinite(Number(x.arpu))||String(x.arpu).includes('€'))errors.push(`Invalid arpu for ${x.customer_key}.`);
+        if(x.schema_version!=='DOCROI_SPO_1.0')errors.push(`Invalid schema_version for ${x.customer_key}.`);
+        if(errors.length>20)break;
+      }
+      state.integrationValid=errors.length===0;const el=$('#integrationValidation');el.className='validation-panel '+(state.integrationValid?'passed':'failed');el.innerHTML=state.integrationValid?`<div class="validation-title">INTEGRATION VALIDATION: PASSED</div><ul class="validation-list"><li>No duplicated or missing customer_key values.</li><li>${state.uniqueCustomers} unique customers = ${rows.length} export rows.</li><li>Valid cognitive scores and movement values.</li><li>Numeric estimated_cost and arpu values without currency symbols.</li><li>ISO YYYY-MM-DD period dates and UTF-8 CSV export.</li></ul>`:`<div class="validation-title">INTEGRATION VALIDATION: FAILED</div><ul class="validation-list">${errors.map(e=>`<li>${escapeHtml(e)}</li>`).join('')}</ul>`;$('#downloadFullCsv').disabled=!state.integrationValid;return state.integrationValid;
+    }
+    $('#validateIntegration').addEventListener('click',validateIntegration);
+    $('#downloadFullCsv').addEventListener('click',()=>{if(!state.integrationValid&&!validateIntegration())return;const text=[SPO_HEADERS,...state.spoRows.map(x=>SPO_HEADERS.map(h=>x[h]??''))].map(r=>r.map(csvEscape).join(',')).join('\n');const filename=state.isDemo?'DOC_ROI_RFM_SPO_READY_DON_ESPADIN.csv':'DOC_ROI_RFM_SPO_READY.csv';downloadText(filename,text,'text/csv;charset=utf-8');});
+    $('#printSummary').addEventListener('click',()=>window.print());$('#downloadTxt').addEventListener('click',()=>state.summaryText&&downloadText('DOC_ROI_Dynamic_RFM_Executive_Summary_EN.txt',state.summaryText));
 
-    const hash=location.hash.slice(1);if(STEP_ORDER.includes(hash)) showStep(hash,false);
+    const hash=location.hash.slice(1);if(STEP_ORDER.includes(hash))showStep(hash,false);
   })();
   </script>
 </body>
